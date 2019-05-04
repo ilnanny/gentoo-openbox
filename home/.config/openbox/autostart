@@ -1,0 +1,68 @@
+#_______________________________________________________________________________
+#
+#                            OpenBox Softwares and Daemons Start
+#_______________________________________________________________________________
+#
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Polkit.
+
+sleep 1 && /usr/libexec/polkit-gnome-authentication-agent-1 &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Sfondo.
+
+#feh --bg-scale /usr/share/backgrounds/${WALLPAPER} &
+#WALLPAPER="rockyduck.png"
+nitrogen --restore &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Window Manager.
+
+DESKTOP_ENV="OPENBOX"
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Compositore.
+#compositor --start &
+compton &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Conky.
+
+conky --daemonize
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Pannello.
+
+tint2 &
+sleep 1 && xfce4-panel &
+#tint2-session --start &
+#sleep 1; polybar-session &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Icona Volume.
+
+#volumeicon &
+pnmixer &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Icona Rete.
+
+sleep 1 && nm-applet --sm-disable &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Tastierino numerico.
+
+sleep 0.5; numlockx &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Tastiera Italiana.
+
+setxkbmap it
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Ntpdate Sync.
+
+sleep 10 && sudo ntpdate pool.ntp.org
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Per xfce4-settings.
+
+xfsettingsd &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Aggiorna nomi cartelle
+
+xdg-user-dirs-gtk-update &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Visualizza i desktop in finestre
+
+#skippy-xd --config ~/.config/skippy-xd/skippy-xd.rc --start-daemon &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Fine.

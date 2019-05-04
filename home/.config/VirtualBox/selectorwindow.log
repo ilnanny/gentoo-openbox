@@ -1,0 +1,17 @@
+VirtualBox GUI VM Selector Window 5.2.26 r128414 linux.amd64 (Jan 25 2019 20:50:35) release log
+00:00:00.389988 Log opened 2019-05-02T07:23:24.260369000Z
+00:00:00.389990 Build Type: release
+00:00:00.389993 OS Product: Linux
+00:00:00.389996 OS Release: 5.0.10-gentoo
+00:00:00.389998 OS Version: #1 SMP Sun Apr 28 08:19:54 CEST 2019
+00:00:00.390027 DMI Product Name: Dell DXP061                  
+00:00:00.390040 DMI Product Version: 
+00:00:00.390091 Host RAM: 5898MB (5.7GB) total, 4554MB (4.4GB) available
+00:00:00.390096 Executable: /opt/VirtualBox/VirtualBox
+00:00:00.390096 Process ID: 8030
+00:00:00.390098 Package type: LINUX_64BITS_GENERIC
+00:00:00.390131 Qt version: 5.6.1
+00:00:00.416185 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.578644 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:00.599830 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 0x0 x 1920x1080
+00:00:05.603556 GUI: UIMediumEnumerator: Medium-enumeration finished!

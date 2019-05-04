@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-desktop" version="1.0">
+  <property name="backdrop" type="empty">
+    <property name="screen0" type="empty">
+      <property name="monitor0" type="empty">
+        <property name="brightness" type="empty"/>
+        <property name="color1" type="empty"/>
+        <property name="color2" type="empty"/>
+        <property name="color-style" type="empty"/>
+        <property name="image-path" type="string" value="/media/Dati/01-download/Filtered Car.jpg"/>
+        <property name="image-show" type="bool" value="true"/>
+        <property name="last-image" type="string" value="/usr/share/backgrounds/MX-Gold1080P.png"/>
+        <property name="last-single-image" type="string" value="/usr/share/backgrounds/MX-Gold1080P.png"/>
+        <property name="image-style" type="int" value="3"/>
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/dreamhorse.png"/>
+          <property name="color1" type="array">
+            <value type="uint" value="13242"/>
+            <value type="uint" value="16844"/>
+            <value type="uint" value="21555"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="3"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/MX-Gold1080P.png"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+        </property>
+      </property>
+      <property name="monitor1" type="empty">
+        <property name="brightness" type="empty"/>
+        <property name="color1" type="empty"/>
+        <property name="color2" type="empty"/>
+        <property name="color-style" type="empty"/>
+        <property name="image-path" type="empty"/>
+        <property name="image-show" type="empty"/>
+        <property name="last-image" type="empty"/>
+        <property name="last-single-image" type="empty"/>
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="4"/>
+          <property name="last-image" type="string" value="/home/ilnanny/Immagini/IMG_20171110_165216_1510441382633.jpg"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-teal.jpg"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+        </property>
+      </property>
+      <property name="monitorLVDS" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="3"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/MX-Gold1080P.png"/>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="3"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/MX-Gold1080P.png"/>
+        </property>
+      </property>
+      <property name="monitor2" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-teal.jpg"/>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-teal.jpg"/>
+        </property>
+      </property>
+      <property name="monitorVGA-0" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="3"/>
+          <property name="last-image" type="string" value="/home/ilnanny/Immagini/IMG_20171110_165216_1510441382633.jpg"/>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="3"/>
+          <property name="last-image" type="string" value="/home/ilnanny/Immagini/IMG_20171110_165216_1510441382633.jpg"/>
+        </property>
+      </property>
+    </property>
+  </property>
+  <property name="desktop-icons" type="empty">
+    <property name="icon-size" type="uint" value="34"/>
+    <property name="file-icons" type="empty">
+      <property name="show-home" type="bool" value="false"/>
+      <property name="show-filesystem" type="bool" value="false"/>
+      <property name="show-trash" type="bool" value="false"/>
+      <property name="show-removable" type="bool" value="false"/>
+    </property>
+    <property name="single-click" type="bool" value="false"/>
+    <property name="tooltip-size" type="double" value="64.000000"/>
+    <property name="style" type="int" value="2"/>
+  </property>
+  <property name="last" type="empty">
+    <property name="window-width" type="int" value="805"/>
+    <property name="window-height" type="int" value="608"/>
+  </property>
+</channel>

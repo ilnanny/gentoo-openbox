@@ -1,0 +1,2 @@
+ln -s ~/.conky/conkycon ~/.conkyrc
+ln -s ~/.conky/conkycon_dark ~/.conkyrc

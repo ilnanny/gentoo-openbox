@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Thunar File Manager
+Name[it]=Root thunar
+Comment=Browse the filesystem with the file manager
+Comment[it]=Esplora il file system Come amministratore
+GenericName=File Manager
+GenericName[it]=Gestore di file
+Exec=sudo thunar %F
+Icon=gksu-file-manager
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;Utility;Core;GTK;FileTools;FileManager;
+X-XFCE-Source=file:///usr/share/applications/Thunar.desktop
+Path=/
