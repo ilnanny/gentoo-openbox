@@ -1,7 +1,5 @@
-# DO NOT EDIT! This file will be overwritten by LXAppearance.
-# Any customization should be done in ~/.gtkrc-2.0.mine instead.
-
-include "/home/ilnanny/.gtkrc-2.0.mine"
+#gtk2rc
+include "~/.gtkrc-2.0.mine"
 gtk-theme-name="Arc-Darker"
 gtk-icon-theme-name="Lila_HD_Purple"
 gtk-font-name="Segoe UI 10.5"

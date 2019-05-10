@@ -5,44 +5,44 @@
   <property name="panels" type="array">
     <value type="int" value="1"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=5;x=111;y=128"/>
-      <property name="length" type="uint" value="5"/>
+      <property name="position" type="string" value="p=5;x=21;y=517"/>
+      <property name="length" type="uint" value="1"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="44"/>
+      <property name="size" type="uint" value="36"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="17"/>
-        <value type="int" value="1"/>
         <value type="int" value="7"/>
         <value type="int" value="14"/>
         <value type="int" value="28"/>
-        <value type="int" value="22"/>
         <value type="int" value="30"/>
         <value type="int" value="23"/>
         <value type="int" value="24"/>
+        <value type="int" value="9"/>
+        <value type="int" value="22"/>
         <value type="int" value="26"/>
         <value type="int" value="40"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
         <value type="int" value="4"/>
-        <value type="int" value="5"/>
-        <value type="int" value="6"/>
         <value type="int" value="8"/>
+        <value type="int" value="6"/>
+        <value type="int" value="1"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="background-color" type="array">
-        <value type="uint" value="8481"/>
-        <value type="uint" value="10537"/>
-        <value type="uint" value="13878"/>
+        <value type="uint" value="16201"/>
+        <value type="uint" value="18393"/>
+        <value type="uint" value="24662"/>
         <value type="uint" value="65535"/>
       </property>
       <property name="mode" type="uint" value="2"/>
       <property name="disable-struts" type="bool" value="false"/>
-      <property name="nrows" type="uint" value="5"/>
+      <property name="nrows" type="uint" value="1"/>
       <property name="background-alpha" type="uint" value="0"/>
-      <property name="autohide-behavior" type="uint" value="2"/>
+      <property name="autohide-behavior" type="uint" value="1"/>
       <property name="background-image" type="string" value="/media/Dati/Screenshot/barra1.png"/>
-      <property name="leave-opacity" type="uint" value="100"/>
-      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="leave-opacity" type="uint" value="85"/>
+      <property name="enter-opacity" type="uint" value="95"/>
       <property name="length-adjust" type="bool" value="true"/>
     </property>
   </property>
@@ -66,6 +66,7 @@
     </property>
     <property name="plugin-17" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="true"/>
     </property>
     <property name="plugin-22" type="string" value="launcher">
       <property name="items" type="array">
@@ -110,8 +111,9 @@
     </property>
     <property name="plugin-1" type="string" value="applicationsmenu">
       <property name="button-title" type="string" value=""/>
-      <property name="button-icon" type="string" value="/usr/share/icons/Lila_HD/apps/scalable/trasparent.svg"/>
-      <property name="show-button-title" type="bool" value="true"/>
+      <property name="button-icon" type="string" value="menu-light"/>
+      <property name="show-button-title" type="bool" value="false"/>
+      <property name="show-menu-icons" type="bool" value="true"/>
     </property>
     <property name="plugin-2" type="string" value="launcher">
       <property name="items" type="array">
@@ -130,11 +132,6 @@
         <value type="string" value="15568637662.desktop"/>
       </property>
     </property>
-    <property name="plugin-5" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="15568637943.desktop"/>
-      </property>
-    </property>
     <property name="plugin-6" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="15568638124.desktop"/>
@@ -143,6 +140,11 @@
     <property name="plugin-8" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="15568638825.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-9" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15573582981.desktop"/>
       </property>
     </property>
   </property>

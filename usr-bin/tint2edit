@@ -1,13 +1,5 @@
 #!/usr/bin/env bash
-
-#================================================
-#================================================
-#   O.S.      : Gnu Linux                       =
-#   Author    : Cristian Pozzessere   = ilnanny =
-#   D.A.Page  : http://ilnanny.deviantart.com   =
-#   Github    : https://github.com/ilnanny      =
-#================================================
-#================================================
+#===========================================
 
 readonly TITLE="Tint2 Edit"
 readonly ICON="--window-icon=/usr/share/icons/48x48.png"

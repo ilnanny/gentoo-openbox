@@ -6,20 +6,20 @@
   </resistance>
   <focus>
     <focusNew>yes</focusNew>
-    <followMouse>no</followMouse>
-    <focusLast>yes</focusLast>
+    <followMouse>yes</followMouse>
+    <focusLast>no</focusLast>
     <underMouse>no</underMouse>
     <focusDelay>200</focusDelay>
     <raiseOnFocus>no</raiseOnFocus>
   </focus>
   <placement>
-    <policy>Smart</policy>
+    <policy>UnderMouse</policy>
     <center>yes</center>
-    <monitor>Mouse</monitor>
-    <primaryMonitor>Mouse</primaryMonitor>
+    <monitor>Any</monitor>
+    <primaryMonitor>2</primaryMonitor>
   </placement>
   <theme>
-    <name>Arc-Dark</name>
+    <name>Blue-Dark</name>
     <titleLayout>LIMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
@@ -71,7 +71,7 @@
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
-    <popupShow>Never</popupShow>
+    <popupShow>NonPixel</popupShow>
     <popupPosition>Center</popupPosition>
     <popupFixedPosition>
       <x>10</x>

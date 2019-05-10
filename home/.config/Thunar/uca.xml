@@ -101,7 +101,7 @@
 	<icon>gnome-music</icon>
 	<name>Esegui Audio </name>
 	<unique-id>1525076054397861-1</unique-id>
-	<command>audacious %F</command>
+	<command>vlcs %F</command>
 	<description>Riproduci Audio e Cartelle con Gogglesmm</description>
 	<patterns>*</patterns>
 	<directories/>
@@ -123,7 +123,7 @@
 	<icon>terminal</icon>
 	<name>Esegui Script</name>
 	<unique-id>1556819956847486-1</unique-id>
-	<command>xfterm -e %f --hold</command>
+	<command>xfce4-terminal -e %f --hold</command>
 	<description>esegue script</description>
 	<patterns>*</patterns>
 	<other-files/>

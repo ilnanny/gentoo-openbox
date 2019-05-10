@@ -20,8 +20,20 @@
       <property name="Print" type="empty"/>
     </property>
     <property name="custom" type="empty">
+      <property name="&lt;Alt&gt;F3" type="string" value="xfce4-appfinder">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Alt&gt;F1" type="string" value="sh /usr/bin/menu -m"/>
+      <property name="&lt;Alt&gt;F2" type="string" value="jgmenu_run &gt;/dev/null">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xflock4"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="string" value="xflock4"/>
+      <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
+      <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
+      <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
+      <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="string" value="xkill"/>
       <property name="&lt;Alt&gt;t" type="string" value="sakura"/>
@@ -32,9 +44,7 @@
       <property name="&lt;Alt&gt;f" type="string" value="thunar"/>
       <property name="&lt;Alt&gt;m" type="string" value="mc"/>
       <property name="&lt;Alt&gt;w" type="string" value="firefox-bin"/>
-      <property name="&lt;Alt&gt;F1" type="string" value="sh /usr/bin/menu -m"/>
-      <property name="&lt;Alt&gt;F2" type="string" value="jgmenu_run &gt;/dev/null"/>
-      <property name="&lt;Alt&gt;r" type="string" value="ranger"/>
+      <property name="&lt;Alt&gt;r" type="string" value="/usr/bin/ranger"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

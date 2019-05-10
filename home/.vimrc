@@ -1,9 +1,6 @@
-" Sane vim 
+" Sane vim
 
 scriptencoding utf8
-
-" Defaults
-runtime! gentoo.vim
 
 " system clipboard (requires +clipboard)
 set clipboard^=unnamed,unnamedplus

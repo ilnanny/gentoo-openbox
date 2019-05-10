@@ -31,13 +31,13 @@ case "$@" in
 esac
 
 if ! . "/usr/lib/common/include.cfg" 2> /dev/null; then
-    echo $"Error: Failed to locate /usr/lib/common/include.cfg" >&2
+    echo $"Errore: non trovo /usr/lib/common/include.cfg" >&2
     exit 1
 fi
 
 if ! type "$KBSCRIPT" &>/dev/null; then
     menuStart
-    menuSeparator "$KBSCRIPT is not available. Try installing scripts."
+    menuSeparator "$KBSCRIPT non esiste. Installa lo  scripts."
     menuEnd
     exit 1
 fi
@@ -59,7 +59,7 @@ fi
 if [[ $1 = '--keybinds' ]]; then
     "$KBSCRIPT" > /dev/null
     menuStart
-    menuSeparator "Openbox window commands"
+    menuSeparator "Finestra di comando Openbox"
     while read -r a b c; do
         if [[ "$a" = "o" ]]; then
             curItem=$(printf "%-20s %s" "$b" "$c")
@@ -68,7 +68,7 @@ if [[ $1 = '--keybinds' ]]; then
     done < "$KBTEXT"
 
     menuSeparator
-    menuSeparator "Run commands"
+    menuSeparator "Esegui"
     while read -r a b c; do
         if [[ "$a" = "x" ]]; then
             curItem=$(printf "%-20s %s" "$b" "$c")
@@ -80,10 +80,10 @@ if [[ $1 = '--keybinds' ]]; then
 fi
 
 menuStart
-    menuItem "Backup and Edit rc.xml" "kb-pipemenu --rcedit"
+    menuItem "Crea un backup ed Edita rc.xml" "kb-pipemenu --rcedit"
     menuSeparator
-    menuItem "Display Keybinds in window" "kb --gui"
-    echo '        <menu execute="kb-pipemenu --keybinds" id="Display keybinds" label="Display Keybinds in menu"/>'
+    menuItem "Visualizza le keybind in una finestra" "kb --gui"
+    echo '        <menu execute="kb-pipemenu --keybinds" id="Visualizza le keybind " label="Visualizza le keybind nel menu"/>'
 menuEnd
 
 exit 0

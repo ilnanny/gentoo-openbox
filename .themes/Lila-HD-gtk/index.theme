@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Lila-HD-gtk
+Comment=Adaptive Gtk+ theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Type=X-GNOME-Metatheme
+GtkTheme=Lila-HD-gtk
+MetacityTheme=Lila-HD-gtk
+IconTheme=Lila_HD
+CursorTheme=Lila_HD-cursor
+CursorSize=24
+ButtonLayout=:close

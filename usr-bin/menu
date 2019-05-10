@@ -28,8 +28,8 @@ Options:
      -v      Visualizza la versione dello script
      -q      Calcolatrice a linea di comando
      -w      Passa tra le finestre aperte
-     -r      Menu 3 colonne al centro
-     -m      Menu 2 colonne in alto a sx
+     -r      Programmi di avvio / eseguibili
+     -m      Menu Personalizzato
      -c      Clipboard a linea di comando
      -b      Cerca per parola chiave sul web
      -l      Menu per uscire dalla Sessione 
@@ -70,25 +70,25 @@ while getopts ":hvqwcbmrl" opt; do
                 -padding 10 -line-padding 4)
             ;;
         m)
-            rofi -location 1 -yoffset 35 -xoffset 10 \
+            rofi -location 1 -yoffset 35 -xoffset 45 \
                 -modi run,drun -show drun -line-padding 10 \
-                -columns 4 -padding 10 -hide-scrollbar \
+                -columns 3 -padding 10 -hide-scrollbar \
                 -show-icons -drun-icon-theme "Lila_HD"
             ;;
         r)
             rofi -modi run,drun -show drun -line-padding 10 \
-                -columns 2 -padding 10 -hide-scrollbar \
+                -columns 3 -padding 10 -hide-scrollbar \
                 -show-icons -drun-icon-theme "Lila_HD"
             ;;
         l)
-            ANS=$(echo " Lock| Esci| Riavvia| Spegni" | \
-                rofi -sep "|" -dmenu -i -p 'System ' "" -width 10 \
-                -hide-scrollbar -eh 1 -line-padding 4 -padding 10 -lines 4)
+            ANS=$(echo "  Blocco   Schermo |  Chiudi   Sessione |  Riavvia  Computer |  Spegni   Computer"| \
+                rofi -sep "|" -dmenu -i -p 'Esegui' "" -width 12 \
+                -hide-scrollbar -eh 1 -line-padding 4 -padding 12 -lines 4)
             case "$ANS" in
                 *Lockscreen) lockscreen -- scrot ;;
                 *Esci) openbox --exit ;;
-                *Riavvia) shutdown -r now ;;
-                *Spegni) shutdown -h now
+                *Riavvia) xterm -e sudo shutdown -r now ;;
+                *Spegni) xterm -e sudo shutdown -h now
             esac
             ;;
         *)

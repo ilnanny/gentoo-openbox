@@ -1,14 +1,5 @@
 #!/usr/bin/env bash
 
-#================================================
-#================================================
-#   O.S.      : Gnu Linux                       =
-#   Author    : Cristian Pozzessere   = ilnanny =
-#   D.A.Page  : http://ilnanny.deviantart.com   =
-#   Github    : https://github.com/ilnanny      =
-#================================================
-#================================================
-
 # Usage: add
 # <menu id="recent" label="Recent Files" execute="/path/to/recent-files-pipemenu" />
 # to your .config/openbox/menu.xml, or use with places-pipemenu (see comments there)

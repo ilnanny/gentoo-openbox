@@ -1,14 +1,5 @@
 #!/usr/bin/env bash
 
-#================================================
-#================================================
-#   O.S.      : Gnu Linux                       =
-#   Author    : Cristian Pozzessere   = ilnanny =
-#   D.A.Page  : http://ilnanny.deviantart.com   =
-#   Github    : https://github.com/ilnanny      =
-#================================================
-#================================================
-
 case $1 in
     -h|--help)
         echo -e "tint2-restart a script to restart all running instances of tint2

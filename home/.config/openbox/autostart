@@ -34,7 +34,7 @@ sleep 1 && xfce4-panel &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Icona Volume.
 
-#volumeicon &
+volumeicon &
 pnmixer &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Icona Rete.
@@ -51,7 +51,7 @@ setxkbmap it
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Ntpdate Sync.
 
-sleep 10 && sudo ntpdate pool.ntp.org
+#sleep 10 && sudo ntpdate pool.ntp.org
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Per xfce4-settings.
 
@@ -59,10 +59,10 @@ xfsettingsd &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Aggiorna nomi cartelle
 
-xdg-user-dirs-gtk-update &
+sleep 1 && xdg-user-dirs-gtk-update &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Visualizza i desktop in finestre
 
-#skippy-xd --config ~/.config/skippy-xd/skippy-xd.rc --start-daemon &
+skippy-xd --config ~/.config/skippy-xd/skippy-xd.rc --start-daemon &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Fine.

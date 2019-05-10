@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=balenaEtcher
 Comment=Flash OS images to SD cards and USB drives, safely and easily.
-Exec="sudo /opt/etcher/balenaEtcher-1.5.24-x64.AppImage" %U
+Exec=sudo /opt/etcher/balenaEtcher-1.5.24-x64.AppImage
 Terminal=false
 Type=Application
 Icon=etcher-electron
