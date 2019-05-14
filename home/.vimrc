@@ -2,6 +2,9 @@
 
 scriptencoding utf8
 
+" Defaults
+runtime! gentoo.vim
+
 " system clipboard (requires +clipboard)
 set clipboard^=unnamed,unnamedplus
 
@@ -40,14 +43,8 @@ syntax enable
 set linebreak breakindent
 set list listchars=tab:>>,trail:~
 
-" midnight, night, or day
-let g:jinx_theme = 'midnight'
-
-try
-    colorscheme jinx
-catch
-    colorscheme slate
-endtry
+syntax on
+color zenburn
 
 if $TERM !=? 'linux'
     set termguicolors

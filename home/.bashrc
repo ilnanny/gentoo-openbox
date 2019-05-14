@@ -1,35 +1,31 @@
-# __________________________________________________________________________________________________________________
-# _____________________________________________________         Bashrc         _________________________________________
-# __________________________________________________________________________________________________________________
+#  ________________________________    Bashrc    ________________________________
 #
-#  ------------------------------------------   >     Shell Interattiva
+# _____ Interattiva
 case $- in
     *i*) ;;
       *) return;;
 esac
-#  ------------------------------------------   >     Aliases Utente
+# _____ Alias
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
-#  ------------------------------------------   >     Aliases Globali '.sh'
-for sh in /etc/bash/bashrc.d/* ; do
-	[[ -r ${sh} ]] && source "${sh}"
-done
-#  ------------------------------------------   >     Profili
+# _____ Profili
 for SH in /etc/profile.d/*.sh; do
        . $SH
 done
-# ____________________________________________________________________________________
-# ________________________________        Direttive      _________________________________
-# ____________________________________________________________________________________
+# _____ Alias .sh
+for sh in /etc/bash/bashrc.d/* ; do
+	[[ -r ${sh} ]] && source "${sh}"
+done
+#  ________________________________    Direttive    ________________________________
 export GPG_TTY=$(tty)
 export TERM="xterm"
 export EDITOR="nano"
 export BROWSER="firefox-bin"
-export WEBBROWSER="firefox-bin"
-export FILEMANAGER="thunar"
+export WEBBROWSER="firefox"
+export FILEMANAGER='thunar"
 export LC_TYPE="it_IT.UTF-8"
-export LANG="it_IT.UTF-8"
+export LANG="it_IT.UTF-8'
 export XDG_CONFIG_HOME="$HOME/.config"
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
@@ -37,8 +33,7 @@ export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:/usr/lib/pkgconfig"
 export WIKI="$HOME/Wiki"
 export SCRIPT="$HOME/Scripts"
 export DOTFILE="$HOME/Dotfiles"
-# ____________________________________________________________________________________
-# ________________________________        Ordinato      _________________________________
+#
 export MANWIDTH=90
 export HISTSIZE=10000
 export HISTIGNORE="q:f:v"
@@ -52,12 +47,15 @@ shopt -s no_empty_cmd_completion
 shopt -s autocd cdable_vars cdspell
 shopt -s cmdhist histappend histreedit histverify
 [[ $DISPLAY ]] && shopt -s checkwinsize
-# ____________________________________________________________________________________
-# ________________________________           Colori          _______________________________
-# ____________________________________________________________________________________
+#
+set -o vi
+set -o notify
+#
+#  ________________________________    Colori Ansi     ________________________________
 case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac
+#
 red='\[\e[0;31m\]'
 blue='\[\e[0;34m\]'
 cyan='\[\e[0;36m\]'
@@ -65,7 +63,6 @@ green='\[\e[0;32m\]'
 yellow='\[\e[0;33m\]'
 purple='\[\e[0;35m\]'
 nc='\[\e[0m\]'
-export PS1="\[\e[0;32m\][\@]\[\e[0;34m\]{\u}\[\e[0;32m\]@\[\e[0;35m\][\H]\[\e[0;32m\]{\w}\[\e[0;35m\]\\$\[$(tput sgr0)\]"
 export LESS_TERMCAP_it=$'\e[01;31m'
 export LESS_TERMCAP_mb=$'\e[01;31m'
 export LESS_TERMCAP_md=$'\e[01;31m'
@@ -74,29 +71,69 @@ export LESS_TERMCAP_se=$'\e[0m'
 export LESS_TERMCAP_so=$'\e[01;44;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[01;32m'
-# ______________________________________________________________________________________
-# ________________________________        Utilità  TTY       ________________________________
-# ______________________________________________________________________________________
-ex ()
+#
+#  ________________________________     Shell  Utente     ________________________________
+#neofetch
+export PS1="\[\e[0;32m\][\@]\[\e[0;34m\]{\u}\[\e[0;32m\]@\[\e[0;35m\][\H]\[\e[0;32m\]{\w}\[\e[0;35m\]\\$\[$(tput sgr0)\]"
+function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+#
+#  ________________________________    Utilità TTY    ________________________________
+#
+estrai()
 {
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1     ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *)           echo "'$1' non puoi estrarlo con ex()" ;;
+    arg="$1"; shift
+    case $arg in
+        -e|--extract)
+            if [[ $1 && -e $1 ]]; then
+                case $1 in
+                    *.tbz2|*.tar.bz2) tar xvjf "$1" ;;
+                    *.tgz|*.tar.gz) tar xvzf "$1" ;;
+                    *.tar.xz) tar xpvf "$1" ;;
+                    *.tar) tar xvf "$1" ;;
+                    *.gz) gunzip "$1" ;;
+                    *.zip) unzip "$1" ;;
+                    *.bz2) bunzip2 "$1" ;;
+                    *.7zip) 7za e "$1" ;;
+                    *.rar) unrar x "$1" ;;
+                    *) printf "'%s' non può essere estratto" "$1"
+                esac
+            else
+                printf "'%s' non è un file valido" "$1"
+            fi ;;
+        -n|--new)
+            case $1 in
+                *.tar.*)
+                    name="${1%.*}"
+                    ext="${1#*.tar}"; shift
+                    tar cvf "$name" "$@"
+                    case $ext in
+                        .gz) gzip -9r "$name" ;;
+                        .bz2) bzip2 -9zv "$name"
+                    esac ;;
+                *.gz) shift; gzip -9rk "$@" ;;
+                *.zip) zip -9r "$@" ;;
+                *.7z) 7z a -mx9 "$@" ;;
+                *) printf "estensione non valida/non supportata"
+            esac ;;
+        *) printf "argomento non valido '%s'" "$arg"
     esac
-  else
-    echo "'$1' non è un file valido"
-  fi
+}
+
+killp()
+{
+    local pid name sig="-TERM"   # default signal
+    [[ $# -lt 1 || $# -gt 2 ]] && printf "Utilizza: killp [-SIGNAL] pattern" && return 1
+    [[ $# -eq 2 ]] && sig=$1
+    for pid in $(mp | awk '!/awk/ && $0~pat { print $1 }' pat=${!#}); do
+        name=$(mp | awk '$1~var { print $5 }' var=$pid)
+        ask "Kill process $pid <$name> with signal $sig?" && kill $sig $pid
+    done
 }
 
 mdf()
@@ -127,7 +164,7 @@ mip()
 
 ii()
 {
-    echo -e "\nSei connesso come \e[1;31m$HOSTNAME"
+    echo -e "\nSei connesso in \e[1;31m$HOSTNAME"
     echo -e "\n\e[1;31mInformazioni aggiuntive:\e[m " ; uname -a
     echo -e "\n\e[1;31mUtenti loggati:\e[m "         ; w -hs | awk '{print $1}' | sort | uniq
     echo -e "\n\e[1;31mData Odierna:\e[m "            ; date
@@ -139,8 +176,4 @@ ii()
     echo
 }
 #
-# Archlinux - AUR:
-# export YAY_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
-# __________________________________________________________________________________________________________________________________
-# ___________________________________________________          Fine         _____________________________________________________________
-# __________________________________________________________________________________________________________________________________
+# _____________________________________  Fine  _______________________________________

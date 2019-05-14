@@ -1,28 +1,26 @@
 ! ------------------------------------------------------------------------------
 ! theme colors
 ! ------------------------------------------------------------------------------
-! special
-*.foreground: #c0c5ce
-*.background: #2b303b
-*.cursorColor: #c0c5ce
+! Dracula Xresources palette
+*.foreground: #F8F8F2
+*.background: #282A36
+*.color0:     #000000
+*.color8:     #4D4D4D
+*.color1:     #FF5555
+*.color9:     #FF6E67
+*.color2:     #50FA7B
+*.color10:    #5AF78E
+*.color3:     #F1FA8C
+*.color11:    #F4F99D
+*.color4:     #BD93F9
+*.color12:    #CAA9FA
+*.color5:     #FF79C6
+*.color13:    #FF92D0
+*.color6:     #8BE9FD
+*.color14:    #9AEDFE
+*.color7:     #BFBFBF
+*.color15:    #E6E6E6
 
-*.color0: #2b303b
-*.color1: #bf616a
-*.color2: #a3be8c
-*.color3: #ebcb8b
-*.color4: #8fa1b3
-*.color5: #b48ead
-*.color6: #96b5b4
-*.color7: #65737e
-
-*.color8: #65737e
-*.color9: #bf616a
-*.color10: #a3be8c
-*.color11: #ebcb8b
-*.color12: #8fa1b3
-*.color13: #b48ead
-*.color14: #96b5b4
-*.color15: #F6F6F6
 
 ! ------------------------------------------------------------------------------
 ! xterm

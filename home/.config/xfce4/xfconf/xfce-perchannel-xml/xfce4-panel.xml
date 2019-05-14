@@ -8,7 +8,7 @@
       <property name="position" type="string" value="p=5;x=21;y=517"/>
       <property name="length" type="uint" value="1"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="36"/>
+      <property name="size" type="uint" value="35"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="17"/>
         <value type="int" value="7"/>
@@ -26,9 +26,10 @@
         <value type="int" value="4"/>
         <value type="int" value="8"/>
         <value type="int" value="6"/>
+        <value type="int" value="5"/>
         <value type="int" value="1"/>
       </property>
-      <property name="background-style" type="uint" value="0"/>
+      <property name="background-style" type="uint" value="2"/>
       <property name="background-color" type="array">
         <value type="uint" value="16201"/>
         <value type="uint" value="18393"/>
@@ -40,8 +41,8 @@
       <property name="nrows" type="uint" value="1"/>
       <property name="background-alpha" type="uint" value="0"/>
       <property name="autohide-behavior" type="uint" value="1"/>
-      <property name="background-image" type="string" value="/media/Dati/Screenshot/barra1.png"/>
-      <property name="leave-opacity" type="uint" value="85"/>
+      <property name="background-image" type="string" value="/home/ilnanny/Immagini/verticale.png"/>
+      <property name="leave-opacity" type="uint" value="95"/>
       <property name="enter-opacity" type="uint" value="95"/>
       <property name="length-adjust" type="bool" value="true"/>
     </property>
@@ -145,6 +146,11 @@
     <property name="plugin-9" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="15573582981.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-5" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15577304601.desktop"/>
       </property>
     </property>
   </property>

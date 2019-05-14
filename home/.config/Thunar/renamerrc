@@ -1,5 +1,5 @@
 [Configuration]
-LastActiveMode=THUNAR_RENAMER_MODE_NAME
+LastActiveMode=THUNAR_RENAMER_MODE_BOTH
 LastActiveRenamer=ThunarSbrInsertRenamer
 
 [ThunarSbrRemoveRenamer]
@@ -15,8 +15,8 @@ CaseSensitive=FALSE
 Pattern=-dark
 
 [ThunarSbrInsertRenamer]
-Offset=0
-Mode=THUNAR_SBR_INSERT_MODE_OVERWRITE
-OffsetMode=THUNAR_SBR_OFFSET_MODE_RIGHT
-Text=pinup
+Offset=1
+Mode=THUNAR_SBR_INSERT_MODE_INSERT
+OffsetMode=THUNAR_SBR_OFFSET_MODE_LEFT
+Text=crot
 
