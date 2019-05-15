@@ -23,7 +23,7 @@ Archlabs Forum  : https://forum.archlabslinux.com/
 Erik Dubois     : https://erikdubois.be/
 Urukramas Guide : https://urukrama.wordpress.com/openbox-faq/
 
-My GitHub Stuffs :
+My GitHub Stuffs  :
 Lila HD Icon Theme  : https://github.com/ilnanny/Lila-HD-icon-theme
 Desktop Backgrounds : https://github.com/ilnanny/backgrounds
 Artworks Resources  : https://github.com/ilnanny/Artwork-Resources
