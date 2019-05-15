@@ -9,8 +9,8 @@
   <property name="shortcuts-icon-size" type="string" value="THUNAR_ICON_SIZE_SMALLER"/>
   <property name="shortcuts-icon-emblems" type="bool" value="true"/>
   <property name="last-window-maximized" type="bool" value="false"/>
-  <property name="last-window-width" type="int" value="823"/>
-  <property name="last-window-height" type="int" value="533"/>
+  <property name="last-window-width" type="int" value="689"/>
+  <property name="last-window-height" type="int" value="488"/>
   <property name="last-sort-column" type="string" value="THUNAR_COLUMN_NAME"/>
   <property name="last-sort-order" type="string" value="GTK_SORT_ASCENDING"/>
   <property name="misc-thumbnail-mode" type="string" value="THUNAR_THUMBNAIL_MODE_ALWAYS"/>

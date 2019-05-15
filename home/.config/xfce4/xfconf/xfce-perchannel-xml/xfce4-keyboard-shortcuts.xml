@@ -20,11 +20,11 @@
       <property name="Print" type="empty"/>
     </property>
     <property name="custom" type="empty">
-      <property name="&lt;Alt&gt;F3" type="string" value="xfce4-appfinder">
+      <property name="&lt;Alt&gt;F3" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Alt&gt;F1" type="string" value="sh /usr/bin/menu -m"/>
-      <property name="&lt;Alt&gt;F2" type="string" value="jgmenu_run &gt;/dev/null">
+      <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-applicationsmenu"/>
+      <property name="&lt;Alt&gt;F2" type="string" value="/home/ilnanny/bin/menu -r">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xflock4"/>
@@ -35,16 +35,9 @@
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="string" value="xkill"/>
-      <property name="&lt;Alt&gt;t" type="string" value="sakura"/>
-      <property name="&lt;Primary&gt;t" type="string" value="xterm"/>
-      <property name="Print" type="string" value="scrot &apos;screenshot_%Y%m%d-%H%M%S_$wx$h.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f&apos;"/>
-      <property name="&lt;Primary&gt;Delete" type="string" value="killwindow"/>
-      <property name="&lt;Primary&gt;b" type="string" value="firefox-bin"/>
-      <property name="&lt;Alt&gt;f" type="string" value="thunar"/>
-      <property name="&lt;Alt&gt;m" type="string" value="mc"/>
-      <property name="&lt;Alt&gt;w" type="string" value="firefox-bin"/>
-      <property name="&lt;Alt&gt;r" type="string" value="/usr/bin/ranger"/>
+      <property name="&lt;Primary&gt;Delete" type="string" value="/home/ilnanny/bin/killwindow"/>
+      <property name="&lt;Primary&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
+      <property name="&lt;Alt&gt;t" type="string" value="xterm "/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
