@@ -24,15 +24,15 @@ my $editor = $CONFIG->{editor};
 
 our $SCHEMA = [
     # Format:  NAME, LABEL, ICON
-{sep => '         Categorie'},
-      {cat => ['utility',            '    Accessori',       'applications-utilities']},
-      {cat => ['development', '    Sviluppo',         'applications-development']},
-      {cat => ['game',            '    Giochi',             'applications-games']},
-      {cat => ['graphics',        '    Grafica',           'applications-graphics']},
-      {cat => ['audiovideo',    '    Multimedia',      'applications-multimedia']},
-      {cat => ['network',        '    Network',          'applications-internet']},
-      {cat => ['office',            '    Ufficio',             'applications-office']},
-      {cat => ['other',            '    Altro',                'applications-other']},
-      {cat => ['settings',        '    Impostazioni',    'applications-accessories']},
-      {cat => ['system',         '    Sistema',           'applications-system']},
+{sep => 'Categorie'},
+      {cat => ['utility',     ' Accessori',      'applications-utilities']},
+      {cat => ['development', ' Sviluppo',       'applications-development']},
+      {cat => ['game',        ' Giochi',         'applications-games']},
+      {cat => ['graphics',    ' Grafica',        'applications-graphics']},
+      {cat => ['audiovideo',  ' Multimedia',     'applications-multimedia']},
+      {cat => ['network',     ' Network',        'applications-internet']},
+      {cat => ['office',      ' Ufficio',        'applications-office']},
+      {cat => ['other',       ' Altro',          'applications-other']},
+      {cat => ['settings',    ' Impostazioni',   'applications-accessories']},
+      {cat => ['system',      ' Sistema',        'applications-system']},
     ]
