@@ -14,8 +14,7 @@ ________________________________________________________________________________
 
 Official infomations :
 
-Gentoo  Wiki    : https://wiki.gentoo.org/wiki/Main_Page
-
+<p>Gentoo  Wiki    : https://wiki.gentoo.org/wiki/Main_Page</p>
 Openbox Wiki    : http://openbox.org/wiki/Help:Getting_started
 
 Tint2 Wiki      : https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md
@@ -30,6 +29,7 @@ Neofetch Wiki   : https://github.com/dylanaraps/neofetch/wiki
 
 
 Inspirations & Guide :
+
 Unixporn Reddit : https://www.reddit.com/r/unixporn/
 
 Archlabs Forum  : https://forum.archlabslinux.com/
