@@ -1,16 +1,7 @@
 #!/usr/bin/env bash
-
-#===================================
-#===================================
-#  O.S.         : Gnu Linux                      
-#  Author     : Cristian Pozzessere                   = ilnanny =
-#  D.Art       : http://ilnanny.deviantart.com                   
-#  Github     : https://github.com/ilnanny
-#  Script originale di Archlabs Linux                    
-#===================================
-#===================================
+#  __________________________________________________________
 #   informazioni online dell 'O.S.' e di alcuni Apllicativi.
-
+#  __________________________________________________________
 for i in "$@"; do
     case "$i" in
         -h|--help) echo "$HELP" ; exit 0
