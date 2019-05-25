@@ -1,4 +1,4 @@
-# Gentoo Openbox
+# <b>Gentoo Openbox </b><br>
 ___________________________________________________________________________________________________________________________
 
 For the configurations I will take inspiration from other customizations (github,reddit,official projects)<br>
@@ -8,7 +8,7 @@ These configurations are written for personal use, in most cases the English lan
 in some cases there will be the Italian language.<br>
 ___________________________________________________________________________________________________________________________
 
-Official infomations :
+<b>Official infomations :</b><br>
 
 Gentoo  Wiki    : https://wiki.gentoo.org/wiki/Main_Page<br>
 Openbox Wiki    : http://openbox.org/wiki/Help:Getting_started<br>
@@ -19,7 +19,7 @@ Conky Wiki      : https://github.com/brndnmtthws/conky/wiki<br>
 Neofetch Wiki   : https://github.com/dylanaraps/neofetch/wiki<br>
 
 
-Inspirations & Guide :<br>
+<b>Inspirations & Guide :</b><br>
 
 Unixporn Reddit : https://www.reddit.com/r/unixporn/<br>
 Archlabs Forum  : https://forum.archlabslinux.com/<br>
@@ -27,7 +27,7 @@ Erik Dubois     : https://erikdubois.be/<br>
 Urukramas Guide : https://urukrama.wordpress.com/openbox-faq/<br>
 
 
-My GitHub Stuffs  :<br>
+<b>My GitHub Stuffs  :</b><br>
 
 Lila HD Icon Theme  : https://github.com/ilnanny/Lila-HD-icon-theme<br>
 Desktop Backgrounds : https://github.com/ilnanny/backgrounds<br>
