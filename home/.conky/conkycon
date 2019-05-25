@@ -44,23 +44,23 @@ total_run_times = 0,
 -------------------------------------
 --  SPECIFICHE FINESTRE
 -------------------------------------
-gap_x=0,                              --Distanza margine Laterale
-gap_y=0,                              --Distanza margine Superiore
-minimum_height=1080,                  --Altezza
-minimum_width=210,                    --Larghezza
-alignment = 'top_right',              --Allineamento top,center,middle,bottom 'left / right'
+gap_x=5,                             --Distanza margine Laterale
+gap_y=0,                             --Distanza margine Superiore
+minimum_height=1080,                 --Altezza Minima
+minimum_width=210,                   --Larghezza Minima
+alignment = 'top_right',             --top,center,middle,bottom 'left/right'
 own_window=true,
 own_window_type="normal",
-own_window_transparent=false,         --Trasparenza -- true o false
-own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
+own_window_transparent=true,         --Trasparenza   >>  true o false
 own_window_class = 'Conky',
 own_window_argb_visual=true,
 own_window_argb_value=80,
 double_buffer = true,
-draw_shades = false,
-default_shade_color = '#000000',
+draw_shades = true,                  --Ombra testo
+default_shade_color = '#BFBFBF',     --Colore ombra
 draw_borders = false,
 border_width = 0,
+own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
 -------------------------------------
 --  IMPOSTAZIONI TESTO
 -------------------------------------

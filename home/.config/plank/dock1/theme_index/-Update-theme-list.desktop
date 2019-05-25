@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+Name=Update-theme-list
+Icon=/home/ilnanny/.config/plank/dock1/theme_index/updater-icon/update-theme-list.svg
+Exec=/home/ilnanny/.config/plank/dock1/theme_index/plank-on-dock-themer-update-theme-list.sh

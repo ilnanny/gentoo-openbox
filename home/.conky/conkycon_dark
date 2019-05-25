@@ -1,5 +1,5 @@
 --[[
-#============================================================================|                       
+#============================================================================|
 # Date    : 08/10/2017
 # Author  : Cristian Pozzessere = ilnanny = < https://github.com/ilnanny >
 # Traslator: == ilnanny ==
@@ -15,7 +15,7 @@
 # INFORMAZIONI GENERALI SUI FONTS
 # Cerca un bel font su siti come http://www.dafont.com/
 # Scarica e decomprimi il font
-# Se hai un font-manager,fai doppio clic sul carattere per installarlo 
+# Se hai un font-manager,fai doppio clic sul carattere per installarlo
 # Se non hai un font-manager sposta il file dei caratteri in  ~ /.fonts oppure in /usr/share/fonts
 # Cambia il nome del font nel conky
 # Puoi cercare il nome da terminale: fc-list | grep "parte del nome"
@@ -44,23 +44,23 @@ total_run_times = 0,
 -------------------------------------
 --  SPECIFICHE FINESTRE
 -------------------------------------
-gap_x=0,                       --Distanza margine Laterale
-gap_y=0,                       --Distanza margine Superiore
-minimum_height=1080,           --Altezza
-minimum_width=210,             --Larghezza
-alignment = 'top_right',       --Allineamento top,center,middle,bottom 'left / right'
+gap_x=5,                             --Distanza margine Laterale
+gap_y=0,                             --Distanza margine Superiore
+minimum_height=1080,                 --Altezza Minima
+minimum_width=210,                   --Larghezza Minima
+alignment = 'top_right',             --top,center,middle,bottom 'left/right'
 own_window=true,
 own_window_type="normal",
-own_window_transparent=true,         --Trasparenza -- true o false
-own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
+own_window_transparent=true,         --Trasparenza   >>  true o false
 own_window_class = 'Conky',
 own_window_argb_visual=true,
 own_window_argb_value=80,
 double_buffer = true,
-draw_shades = false,
-default_shade_color = '#000000',
+draw_shades = true,                  --Ombra testo
+default_shade_color = '#BFBFBF',     --Colore ombra
 draw_borders = false,
 border_width = 0,
+own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
 -------------------------------------
 --  IMPOSTAZIONI TESTO
 -------------------------------------
@@ -81,10 +81,10 @@ pad_percents = 2,
 --  SCHEMA DEI COLORI
 -------------------------------------
 default_color="#3A3838",
-color0="#3A3838",              
+color0="#3A3838",
 color1="#3A3838",
 color2="#636363",
-  
+
 }
 -------------------------------------
 --  TESTO
@@ -97,7 +97,7 @@ $stippled_hr
 #-------------------------------------
 #--  Sistema
 #-------------------------------------
-${color0}${font ConkyColorsLogos:size=16:size=16}g${font}${color} 
+${color0}${font ConkyColorsLogos:size=16:size=16}g${font}${color}
 ${goto 32}${voffset -23}Kernel: ${alignr}${color2}${kernel}${color}
 ${color0}${font ConkyColors:size=16}o${font}${color}
 ${goto 32}${voffset -23}Uptime: ${alignr}${color2}${uptime}${color}
@@ -115,9 +115,9 @@ ${goto 32}${voffset -23}${goto 32}CPU4: ${font Coda::size=10}${color1}${cpu cpu3
 #-- Memoria
 #-------------------------------------
 ${voffset 2}${color0}${font ConkyColors:size=16}g${font}${color}${goto 32}${voffset -3}RAM: ${font}${color1}$memperc%${color}${font}${alignr}${color2}${membar 8,80 }${color}
-${offset 1}${color1}Usata: ${font}${color2}${mem}${color1}${font}${alignr}Dispon.: ${font}${color2}${memeasyfree}${color}${font} 
+${offset 1}${color1}Usata: ${font}${color2}${mem}${color1}${font}${alignr}Dispon.: ${font}${color2}${memeasyfree}${color}${font}
 ${voffset 2}${color0}${font ConkyColors:size=16}g${font}${color}${goto 32}${voffset -3}SWAP: ${font}${color1}$swapperc%${color}${font}${alignr}${color2}${swapbar 8,80 }${color}
-${offset 1}${color1}Usata: ${font}${color2}${swap}${color1}${font}${alignr}Dispon.: ${font}${color2}${swapmax}${color}${font} 
+${offset 1}${color1}Usata: ${font}${color2}${swap}${color1}${font}${alignr}Dispon.: ${font}${color2}${swapmax}${color}${font}
 #-------------------------------------
 #-- Data
 #-------------------------------------

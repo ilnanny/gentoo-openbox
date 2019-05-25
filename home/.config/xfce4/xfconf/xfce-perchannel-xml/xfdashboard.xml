@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfdashboard" version="1.0">
+  <property name="theme" type="string" value="xfdashboard-dark"/>
+  <property name="favourites" type="array">
+    <value type="string" value="exo-web-browser.desktop"/>
+    <value type="string" value="exo-mail-reader.desktop"/>
+    <value type="string" value="exo-file-manager.desktop"/>
+    <value type="string" value="exo-terminal-emulator.desktop"/>
+    <value type="string" value="geany.desktop"/>
+    <value type="string" value="xfce-settings-manager.desktop"/>
+    <value type="string" value="obconf.desktop"/>
+    <value type="string" value="tint2conf.desktop"/>
+    <value type="string" value="panel-preferences.desktop"/>
+    <value type="string" value="com.github.themix_project.Oomox.desktop"/>
+    <value type="string" value="xfdashboard-settings.desktop"/>
+    <value type="string" value="xfce-keyboard-settings.desktop"/>
+  </property>
+  <property name="enable-unmapped-window-workaround" type="bool" value="true"/>
+  <property name="components" type="empty">
+    <property name="applications-view" type="empty">
+      <property name="show-all-apps" type="bool" value="true"/>
+    </property>
+    <property name="windows-view" type="empty">
+      <property name="scroll-event-changes-workspace" type="bool" value="true"/>
+    </property>
+  </property>
+  <property name="enabled-plugins" type="array">
+    <value type="string" value="clock-view"/>
+    <value type="string" value="gnome-shell-search-provider"/>
+    <value type="string" value="hot-corner"/>
+  </property>
+  <property name="min-notification-timeout" type="uint" value="2500"/>
+  <property name="plugins" type="empty">
+    <property name="clock-view" type="empty">
+      <property name="hour-color" type="string" value="#ce5c00ff"/>
+      <property name="background-color" type="string" value="#555f88ff"/>
+      <property name="second-color" type="string" value="#c4a000ff"/>
+      <property name="minute-color" type="string" value="#ddf5f7ff"/>
+    </property>
+    <property name="hot-corner" type="empty">
+      <property name="activation-corner" type="string" value="XFDASHBOARD_HOT_CORNER_SETTINGS_ACTIVATION_CORNER_TOP_LEFT"/>
+      <property name="activation-radius" type="int" value="3"/>
+      <property name="activation-duration" type="int64" value="449"/>
+    </property>
+  </property>
+  <property name="switch-to-view-on-resume" type="string" value="applications"/>
+</channel>

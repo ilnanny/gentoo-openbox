@@ -27,8 +27,8 @@ conky --daemonize
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Pannello.
 
-tint2 &
-sleep 1 && xfce4-panel &
+sleep 1 && tint2 &
+sleep 2 && xfce4-panel &
 #tint2-session --start &
 #sleep 1; polybar-session &
 
@@ -49,9 +49,6 @@ sleep 0.5; numlockx &
 
 setxkbmap it
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Ntpdate Sync.
-
-#sleep 10 && sudo ntpdate pool.ntp.org
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Per xfce4-settings.
 
@@ -63,6 +60,15 @@ sleep 1 && xdg-user-dirs-gtk-update &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Visualizza i desktop in finestre
 
-skippy-xd --config ~/.config/skippy-xd/skippy-xd.rc --start-daemon &
+skippy --config ~/.skippyrc --start-daemon &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Fine.
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Salva il testo digitato a breve termine
+
+parcellite &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  (Xf) dashboard stile gnome
+
+xfdashboard  &
+
+#        _____________          Fine          _____________
+

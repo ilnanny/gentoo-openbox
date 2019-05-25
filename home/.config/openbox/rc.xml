@@ -7,8 +7,8 @@
   <focus>
     <focusNew>yes</focusNew>
     <followMouse>no</followMouse>
-    <focusLast>no</focusLast>
-    <underMouse>no</underMouse>
+    <focusLast>yes</focusLast>
+    <underMouse>yes</underMouse>
     <focusDelay>200</focusDelay>
     <raiseOnFocus>no</raiseOnFocus>
   </focus>
@@ -19,44 +19,44 @@
     <primaryMonitor>2</primaryMonitor>
   </placement>
   <theme>
-    <name>Purple-Dark</name>
+    <name>larrycow</name>
     <titleLayout>LIMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Segoe UI</name>
+      <name>Decker</name>
       <size>10</size>
-      <weight>Normal</weight>
+      <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Segoe UI</name>
+      <name>Decker</name>
       <size>10</size>
-      <weight>Normal</weight>
+      <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>Decker</name>
+      <name>Cursor</name>
       <size>11</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>Decker</name>
-      <size>11</size>
+      <name>Cursor</name>
+      <size>10</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Segoe UI</name>
-      <size>11</size>
-      <weight>Normal</weight>
+      <name>Cursor</name>
+      <size>10</size>
+      <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Segoe UI</name>
-      <size>11</size>
-      <weight>Normal</weight>
+      <name>Cursor</name>
+      <size>10</size>
+      <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
   </theme>
@@ -72,7 +72,7 @@
   <resize>
     <drawContents>yes</drawContents>
     <popupShow>NonPixel</popupShow>
-    <popupPosition>Center</popupPosition>
+    <popupPosition>Top</popupPosition>
     <popupFixedPosition>
       <x>10</x>
       <y>10</y>
