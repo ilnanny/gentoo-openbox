@@ -318,59 +318,14 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-    <keybind key="XF86AudioRaiseVolume">
-      <action name="Execute">
-        <command>pamixer -i 2</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioLowerVolume">
-      <action name="Execute">
-        <command>pamixer -d 2</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioMute">
-      <action name="Execute">
-        <command>pamixer -t</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioStop">
-      <action name="Execute">
-        <command>playerctl stop</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioPlay">
-      <action name="Execute">
-        <command>playerctl play-pause</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioPrev">
-      <action name="Execute">
-        <command>playerctl previous</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioNext">
-      <action name="Execute">
-        <command>playerctl next</command>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessUp">
-      <action name="Execute">
-        <command>xbacklight +10</command>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessDown">
-      <action name="Execute">
-        <command>xbacklight -10</command>
-      </action>
-    </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>scrot 'screenshot_%Y%m%d-%H%M%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f'</command>
+        <command>xfce4-schreenshooter</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot -d 5 'screenshot_%Y%m%d-%H%M%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f'</command>
+        <command>scrot -d 5 'screenshot_%Y%m%d-%H%M%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; nomacs $$(xdg-user-dir PICTURES)/$f'</command>
       </action>
     </keybind>
     <keybind key="W-f">
@@ -418,21 +373,9 @@
         <command>exo-open --launch TerminalEmulator</command>
       </action>
     </keybind>
-    <!-- bound to synapse
-      <keybind key="C-space">
-        <action name="Execute">
-          <command>rofr.sh -r</command>
-        </action>
-      </keybind>
-  -->
-    <keybind key="C-A-l">
-      <action name="Execute">
-        <command>lockscreen -- scrot</command>
-      </action>
-    </keybind>
     <keybind key="C-A-Delete">
       <action name="Execute">
-        <command>rofr.sh -l</command>
+        <command>menu -l</command>
       </action>
     </keybind>
     <keybind key="W-S-Escape">
@@ -456,7 +399,7 @@
     </keybind>
     <keybind key="A-F2">
       <action name="Execute">
-        <command>rofr.sh -r</command>
+        <command>menu -r</command>
       </action>
     </keybind>
     <keybind key="A-F4">

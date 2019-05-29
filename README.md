@@ -32,7 +32,7 @@ Urukramas Guide : https://urukrama.wordpress.com/openbox-faq/<br>
 Lila HD Icon Theme  : https://github.com/ilnanny/Lila-HD-icon-theme<br>
 Desktop Backgrounds : https://github.com/ilnanny/backgrounds<br>
 Artworks Resources  : https://github.com/ilnanny/Artwork-Resources<br>
-Gtk/Openbox Theme   : https://github.com/ilnanny/ilnanny-gtk-themes<br>
+Gnu Linux Theme     : https://github.com/ilnanny/linux-themes<br>
 ___________________________________________________________________________________________________________________________
 
 <hr align=”left” size=”1″ width=”300″ color=”red” noshade>

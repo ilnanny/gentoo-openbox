@@ -5,4 +5,4 @@
 
 # sleep 1; polybar-session &
 
-/home/cristian/.config/polybar/config openbox-bar
+/home/ilnanny/.config/polybar/config openbox-bar

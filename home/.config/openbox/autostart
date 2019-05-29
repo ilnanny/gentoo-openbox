@@ -60,15 +60,13 @@ sleep 1 && xdg-user-dirs-gtk-update &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Visualizza i desktop in finestre
 
-skippy --config ~/.skippyrc --start-daemon &
+#skippy --config ~/.skippyrc --start-daemon &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Salva il testo digitato a breve termine
 
 parcellite &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  (Xf) dashboard stile gnome
 
-xfdashboard  &
 
 #        _____________          Fine          _____________
 

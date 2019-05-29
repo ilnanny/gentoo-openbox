@@ -2,7 +2,7 @@
 <actions>
 <action>
 	<icon>utilities-terminal</icon>
-	<name>Apri un Terminale </name>
+	<name>Apri un Terminale qui </name>
 	<unique-id>1519087650955555-2</unique-id>
 	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
 	<description></description>
@@ -12,7 +12,7 @@
 </action>
 <action>
 	<icon>emblem-symbolic-link</icon>
-	<name>Collegamento</name>
+	<name>Crea Symlink</name>
 	<unique-id>1556791377792315-1</unique-id>
 	<command>ln -s %f &quot;symlink a %n&quot;</command>
 	<description>crea un collegamento simbolico</description>
@@ -90,30 +90,19 @@
 </action>
 <action>
 	<icon>preferences-system-search</icon>
-	<name>Cerca </name>
-	<unique-id>1556820027415523-4</unique-id>
+	<name>Catfish </name>
+	<unique-id>1559097822347108-1</unique-id>
 	<command>catfish --fileman=thunar --path=%f --hidden --method=locate</command>
 	<description>Ricerca di un file in una directory</description>
 	<patterns>*</patterns>
 	<directories/>
 </action>
 <action>
-	<icon>gnome-music</icon>
-	<name>Esegui Audio </name>
-	<unique-id>1525076054397861-1</unique-id>
-	<command>vlcs %F</command>
-	<description>Riproduci Audio e Cartelle con Gogglesmm</description>
-	<patterns>*</patterns>
-	<directories/>
-	<audio-files/>
-	<other-files/>
-</action>
-<action>
 	<icon>vlc</icon>
-	<name>Esegui Video</name>
-	<unique-id>1518414429431959-9</unique-id>
+	<name>Esegui Audio/Video</name>
+	<unique-id>1557991618105003-1</unique-id>
 	<command>vlc %F</command>
-	<description>Riproduci Video  con VLC</description>
+	<description>Riproduci file multimediali con VLC</description>
 	<patterns>*</patterns>
 	<directories/>
 	<audio-files/>
@@ -130,7 +119,7 @@
 </action>
 <action>
 	<icon>folder-remote</icon>
-	<name>Condividi </name>
+	<name>Condividi in Lan</name>
 	<unique-id>1518414450696004-10</unique-id>
 	<command>net usershare add %n %f “” Everyone:F guest_ok=n &amp;&amp; chmod 777 %f</command>
 	<description>Condivide la cartella in LAN</description>
@@ -139,7 +128,7 @@
 </action>
 <action>
 	<icon>archive-extract</icon>
-	<name>Estrai  Zip</name>
+	<name>Estrai Zip*</name>
 	<unique-id>1518324722592450-1</unique-id>
 	<command>unzip \*.zip</command>
 	<description></description>
@@ -149,7 +138,7 @@
 </action>
 <action>
 	<icon>archive-insert</icon>
-	<name>Estrai Rar</name>
+	<name>Estrai Rar*</name>
 	<unique-id>1530524871999921-1</unique-id>
 	<command>unrar \*.rar</command>
 	<description></description>
@@ -173,29 +162,29 @@
 </action>
 <action>
 	<icon>gnome-mime-image-jpeg</icon>
-	<name>PNG 2 .JPG</name>
-	<unique-id>1552369276813551-4</unique-id>
-	<command>convert %f -quality 95 %f.jpg</command>
-	<description>converte immagini png in jpg</description>
+	<name>PNG 2 JPG</name>
+	<unique-id>1557902957821974-2</unique-id>
+	<command>convert %f  -quality 98 %f.jpg</command>
+	<description>converte tutte le immagini png in jpg</description>
 	<patterns>*.png</patterns>
 	<image-files/>
 </action>
 <action>
 	<icon>Adobeillustrator</icon>
-	<name>AI 2 SVG</name>
-	<unique-id>1552593441814889-3</unique-id>
-	<command>for i in *; do inkscape $i --export-plain-svg=`echo $i | sed -e s/ai$/svg/`; done
-</command>
-	<description>esporta da ai a svg</description>
-	<patterns>*.ai</patterns>
+	<name>PNG 2 XBM</name>
+	<unique-id>1557903228102246-6</unique-id>
+	<command>convert %f -quality 95 %f.xbm</command>
+	<description></description>
+	<patterns>*.png</patterns>
+	<directories/>
 	<image-files/>
 </action>
 <action>
 	<icon>image-png</icon>
-	<name>SVG 2 PNG</name>
+	<name>SVG2PNG 300*</name>
 	<unique-id>1556426909041201-1</unique-id>
 	<command>for i in *; do inkscape $i -d=300 -C --export-png=`echo $i | sed -e s/svg$/png/`; done</command>
-	<description>esporta da svg a png</description>
+	<description>Converte da svg a png in 300dpi</description>
 	<patterns>*.svg</patterns>
 	<image-files/>
 </action>

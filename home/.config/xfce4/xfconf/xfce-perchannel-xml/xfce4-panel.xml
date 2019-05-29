@@ -8,9 +8,8 @@
       <property name="position" type="string" value="p=5;x=21;y=520"/>
       <property name="length" type="uint" value="1"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="36"/>
+      <property name="size" type="uint" value="39"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="12"/>
         <value type="int" value="7"/>
         <value type="int" value="14"/>
         <value type="int" value="28"/>
@@ -23,7 +22,8 @@
         <value type="int" value="3"/>
         <value type="int" value="4"/>
         <value type="int" value="8"/>
-        <value type="int" value="13"/>
+        <value type="int" value="1"/>
+        <value type="int" value="2"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="background-color" type="array">
@@ -36,7 +36,7 @@
       <property name="disable-struts" type="bool" value="true"/>
       <property name="nrows" type="uint" value="1"/>
       <property name="background-alpha" type="uint" value="0"/>
-      <property name="autohide-behavior" type="uint" value="2"/>
+      <property name="autohide-behavior" type="uint" value="1"/>
       <property name="background-image" type="string" value="/media/Dati/Dati/Artworkss/barra1.png"/>
       <property name="leave-opacity" type="uint" value="100"/>
       <property name="enter-opacity" type="uint" value="100"/>
@@ -94,7 +94,7 @@
       <property name="items" type="array">
         <value type="string" value="15569111881.desktop"/>
       </property>
-      <property name="disable-tooltips" type="bool" value="true"/>
+      <property name="disable-tooltips" type="bool" value="false"/>
     </property>
     <property name="plugin-4" type="string" value="launcher">
       <property name="items" type="array">
@@ -116,13 +116,15 @@
         <value type="string" value="15586286471.desktop"/>
       </property>
     </property>
-    <property name="plugin-12" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-      <property name="expand" type="bool" value="true"/>
+    <property name="plugin-1" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15590144211.desktop"/>
+      </property>
     </property>
-    <property name="plugin-13" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-      <property name="expand" type="bool" value="true"/>
+    <property name="plugin-2" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15590974511.desktop"/>
+      </property>
     </property>
   </property>
 </channel>
