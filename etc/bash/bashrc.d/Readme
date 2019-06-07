@@ -1,6 +1,12 @@
-before change
+#
 
-/$USER/ to /home/yourUsername/
+If you want to use these aliases even for the root user
+you need to replace (within the script)
 
-in to alias.sh
+   $HOME with your-username
 
+
+
+Enjoy.
+
+#

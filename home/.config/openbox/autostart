@@ -1,74 +1,79 @@
-#_______________________________________________________________________________
+#______________________________________________________________________________________
 #
 #                        OpenBox Softwares and Daemons Start
-#_______________________________________________________________________________
+#______________________________________________________________________________________
 #
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  PolkitGnome.
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Ambiente Grafico.
 
-sleep 1 && /usr/libexec/polkit-gnome-authentication-agent-1 &
+DESKTOP_ENV="OPENBOX"
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Wallpaper.
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Polkit Gnome.
+
+sleep 1; /usr/libexec/polkit-gnome-authentication-agent-1 &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Layaout Tastiera.
+
+setxkbmap it
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Impostazioni XFCE.
+
+xfsettingsd &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Sfondo Desktop.
 
 #feh --bg-scale /usr/share/backgrounds/${WALLPAPER} &
 #WALLPAPER="rockyduck.png"
 nitrogen --restore &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Window Manager.
-
-DESKTOP_ENV="OPENBOX"
-
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Compositore.
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Trasparenze.
 #compositor --start &
-compton &
+sleep 1; compton &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Conky.
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Pannelli/Dock.
 
-conky --daemonize
-
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Pannelli.
-
-sleep 1 && tint2 -c ~/.config/tint2/transoriz.tint2rc &
-sleep 2 && tint2 -c ~/.config/tint2/transvert.tint2rc &
-#sleep 2 && xfce4-panel &
-#tint2-session --start &
-#sleep 1; polybar-session &
+sleep 2; tint2 -c ~/.config/tint2/transoriz.tint2rc &
+sleep 3; tint2 -c ~/.config/tint2/transvert.tint2rc &
+#sleep 2; xfce4-panel &
+#sleep 2; tint2-session --start &
+#sleep 2; polybar-session &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Icona Volume.
 
-#volumeicon &
-pnmixer &
-
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Icona Rete.
-
-sleep 1 && nm-applet --sm-disable &
+#sleep 4; volumeicon &
+sleep 4; pnmixer &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Tastierino numerico.
 
-sleep 0.5; numlockx &
+sleep 5; numlockx &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Tastiera Italiana.
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Icona Rete.
 
-setxkbmap it
-
-
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Per xfce4-settings.
-
-xfsettingsd &
+sleep 6; nm-applet --sm-disable &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Aggiorna nomi cartelle
 
-sleep 1 && xdg-user-dirs-gtk-update &
+sleep 7; xdg-user-dirs-gtk-update &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Visualizza i desktop in finestre
 
-#skippy --config ~/.skippyrc --start-daemon &
+#sleep 8; skippy --config ~/.skippyrc --start-daemon &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Salva il testo digitato
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Monitor di Sistema.
 
-parcellite &
+sleep 9; conky --daemonize
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Cache di Digitazione
+
+sleep 10; parcellite &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Terminale DropDown
+
+sleep 11; xfce4-terminal --drop-down
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Radio Deejay
 
-sleep 15 && vlc /home/ilnanny/bin/radio_deejay.m3u8 &
+sleep 12; vlc /home/ilnanny/bin/radio_deejay.m3u8 &
 
-#        _____________          Fine          _____________
+#______________________________________________________________________________________
+#                                        Fine
+#______________________________________________________________________________________
