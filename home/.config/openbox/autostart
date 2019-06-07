@@ -1,13 +1,13 @@
 #_______________________________________________________________________________
 #
-#                            OpenBox Softwares and Daemons Start
+#                        OpenBox Softwares and Daemons Start
 #_______________________________________________________________________________
 #
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Polkit.
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  PolkitGnome.
 
 sleep 1 && /usr/libexec/polkit-gnome-authentication-agent-1 &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Sfondo.
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Wallpaper.
 
 #feh --bg-scale /usr/share/backgrounds/${WALLPAPER} &
 #WALLPAPER="rockyduck.png"
@@ -25,16 +25,17 @@ compton &
 
 conky --daemonize
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Pannello.
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Pannelli.
 
-sleep 1 && tint2 &
-sleep 2 && xfce4-panel &
+sleep 1 && tint2 -c ~/.config/tint2/transoriz.tint2rc &
+sleep 2 && tint2 -c ~/.config/tint2/transvert.tint2rc &
+#sleep 2 && xfce4-panel &
 #tint2-session --start &
 #sleep 1; polybar-session &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Icona Volume.
 
-volumeicon &
+#volumeicon &
 pnmixer &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Icona Rete.
@@ -62,11 +63,12 @@ sleep 1 && xdg-user-dirs-gtk-update &
 
 #skippy --config ~/.skippyrc --start-daemon &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Salva il testo digitato a breve termine
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Salva il testo digitato
 
 parcellite &
 
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Radio Deejay
 
+sleep 15 && vlc /home/ilnanny/bin/radio_deejay.m3u8 &
 
 #        _____________          Fine          _____________
-

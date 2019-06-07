@@ -1,17 +1,17 @@
 --[[
-#============================================================================|
+#============================================================================
 # Date    : 08/10/2017
 # Author  : Cristian Pozzessere = ilnanny = < https://github.com/ilnanny >
 # Traslator: == ilnanny ==
 # Version : v1.0
 # License : Distributed under the terms of GNU GPL version 2 or later
-#============================================================================|
+#============================================================================
 # CONKY
 # Per i comandi nella sezione conky.config:
 # http://conky.sourceforge.net/config_settings.html
 # Per i comandi nella sezione conky.text :
 # http://conky.sourceforge.net/variables.html
-#================================================================|
+#================================================================
 # INFORMAZIONI GENERALI SUI FONTS
 # Cerca un bel font su siti come http://www.dafont.com/
 # Scarica e decomprimi il font
@@ -21,9 +21,9 @@
 # Puoi cercare il nome da terminale: fc-list | grep "parte del nome"
 # Cambia larghezza e altezza del conky in base al carattere
 # Esegui (nel Terminale): fc-cache -fv o riavvia il sistema.
-#=================================================================|
+#=================================================================
 # FONTS  : ConkyColors , Coda ==> Puoi sostituirlo con 'Decker'
-#=================================================================|
+#=================================================================
 ]]
 conky.config = {
 -------------------------------------
@@ -56,8 +56,8 @@ own_window_class = 'Conky',
 own_window_argb_visual=true,
 own_window_argb_value=80,
 double_buffer = true,
-draw_shades = true,                  --Ombra testo
-default_shade_color = '#BFBFBF',     --Colore ombra
+draw_shades = false,                  --Ombra testo
+default_shade_color = '#93939f',     --Colore ombra
 draw_borders = false,
 border_width = 0,
 own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
@@ -65,14 +65,14 @@ own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
 --  IMPOSTAZIONI TESTO
 -------------------------------------
 use_xft=true,
-xftalpha=1,
+xftalpha=05,
 font="Coda:style=Bold:size=10",
 font2="ConkyColorsLogos:size=16",
 text_buffer_size=256,
 override_utf8_locale=true,
 draw_graph_borders = false,
-draw_outline = false,                 --Contorno testo
-default_outline_color = '#BFBFBF',    --Colore contorno
+draw_outline = false,                  --  Contorno testo
+default_outline_color = "#000000",     --  Colore contorno
 no_buffers = true,
 uppercase = false,
 cpu_avg_samples = 4,
@@ -80,10 +80,10 @@ pad_percents = 2,
 -------------------------------------
 --  SCHEMA DEI COLORI
 -------------------------------------
-default_color="#000000",               --  Colore Primario
-color0="#000000",                      --  Icone
-color1="#000000",                      --  Testo Dinamico
-color2="#000000",                      --  Barre
+default_color="#E3E3E3",               --  Colore Primario
+color0="#E3E3E3",                      --  Icone
+color1="#E3E3E3",                      --  Testo Dinamico
+color2="#E3E3E3",                      --  Barre
 }
 -------------------------------------
 --  TESTO
@@ -91,7 +91,7 @@ color2="#000000",                      --  Barre
 conky.text = [[
 
 $stippled_hr${font}
-${color}${font}${goto 35}${execi 6000 lsb_release -a | grep 'Descr'|awk {'print $2 " " $3" " $4'}}${color}
+${color}${font}${goto 25}${execi 6000 lsb_release -a | grep 'Descr'|awk {'print $2 " " $3" " $4'}}${color}
 $stippled_hr
 #-------------------------------------
 #--  Sistema
@@ -110,6 +110,20 @@ ${color0}${font ConkyColors:size=16}m${font}${color}
 ${goto 32}${voffset -23}${goto 32}CPU3: ${font Coda::size=10}${color1}${cpu cpu2}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu3 }${color}
 ${color0}${font ConkyColors:size=16}m${font}${color}
 ${goto 32}${voffset -23}${goto 32}CPU4: ${font Coda::size=10}${color1}${cpu cpu3}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu4 }${color}
+${voffset 4}${color0}${font ConkyColors:size=16}m${font}${offset -23}${voffset 10}${color}${voffset -16}${goto 32}CPU5: ${font Coda:size=10}${color1}${cpu cpu4}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu1 }${color}
+${color0}${font ConkyColors:size=16}m${font}${color}
+${goto 32}${voffset -23}${goto 32}CPU6: ${font Coda::size=10}${color1}${cpu cpu5}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu2 }${color}
+${color0}${font ConkyColors:size=16}m${font}${color}
+${goto 32}${voffset -23}${goto 32}CPU7: ${font Coda::size=10}${color1}${cpu cpu6}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu3 }${color}
+${color0}${font ConkyColors:size=16}m${font}${color}
+${goto 32}${voffset -23}${goto 32}CPU8: ${font Coda::size=10}${color1}${cpu cpu7}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu4 }${color}
+${voffset 4}${color0}${font ConkyColors:size=16}m${font}${offset -23}${voffset 10}${color}${voffset -16}${goto 32}CPU9: ${font Coda:size=10}${color1}${cpu cpu8}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu1 }${color}
+${color0}${font ConkyColors:size=16}m${font}${color}
+${goto 32}${voffset -23}${goto 32}CPU10: ${font Coda::size=10}${color1}${cpu cpu9}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu9 }${color}
+${color0}${font ConkyColors:size=16}m${font}${color}
+${goto 32}${voffset -23}${goto 32}CPU11: ${font Coda::size=10}${color1}${cpu cpu10}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu3 }${color}
+${color0}${font ConkyColors:size=16}m${font}${color}
+${goto 32}${voffset -23}${goto 32}CPU12: ${font Coda::size=10}${color1}${cpu cpu11}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu4 }${color}
 #-------------------------------------
 #-- Memoria
 #-------------------------------------
@@ -121,7 +135,7 @@ ${offset 1}${color1}Usata: ${font}${color2}${swap}${color1}${font}${alignr}Dispo
 #-- Data/Ora
 #-------------------------------------
 $stippled_hr${font}
-${voffset 1}${alignc 10}${color2}${goto 42}${font Audiowide:size=22}${time %H:%M}${voffset 6}${alignc 6}${font Audiowide:size=10}${color}
+${voffset 1}${alignc 10}${color2}${goto 36}${font Audiowide:size=22}${time %H:%M}${voffset 6}${alignc 6}${font Audiowide:size=10}${color}
 ${alignc}${time %A %d }
 ${voffset 6}${alignc 6}${color2}${font Audiowide:size=10}${color}${alignc}${time  %B %Y}
 #-------------------------------------

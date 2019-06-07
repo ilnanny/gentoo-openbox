@@ -1,0 +1,2 @@
+su
+ ln -s /etc/bash/bashrc /home/ilnanny/.bashrc

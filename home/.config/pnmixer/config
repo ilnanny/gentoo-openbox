@@ -1,0 +1,25 @@
+[PNMixer]
+SliderOrientation=vertical
+DisplayTextVolume=true
+TextVolumePosition=1
+ScrollStep=5
+FineScrollStep=1
+MiddleClickAction=2
+CustomCommand=
+VolMuteKey=-1
+VolUpKey=-1
+VolDownKey=-1
+AlsaCard=HDA Intel
+NormalizeVolume=true
+SystemTheme=true
+DrawVolMeter=true
+VolMeterPos=20
+VolMeterColor=0.25455555555555565;0.72292393736017901;0.96666666666666667;
+VolumeControlCommand=xterm -e alsamixer
+EnableHotKeys=false
+VolMuteMods=0
+VolUpMods=0
+VolDownMods=0
+
+[HDA Intel]
+Channel=Master

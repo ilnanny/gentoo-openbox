@@ -90,12 +90,14 @@
 </action>
 <action>
 	<icon>preferences-system-search</icon>
-	<name>Catfish </name>
-	<unique-id>1559097822347108-1</unique-id>
-	<command>catfish --fileman=thunar --path=%f --hidden --method=locate</command>
+	<name>Cerca con Catfish </name>
+	<unique-id>1559686486607624-1</unique-id>
+	<command>catfish --path=%f</command>
 	<description>Ricerca di un file in una directory</description>
 	<patterns>*</patterns>
 	<directories/>
+	<other-files/>
+	<text-files/>
 </action>
 <action>
 	<icon>vlc</icon>

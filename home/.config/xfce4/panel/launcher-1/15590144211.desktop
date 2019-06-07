@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=rxvt-unicode
-Type=Application
-Comment=rxvt clone with xft and unicode support
-Exec=urxvt
-TryExec=urxvt
-Icon=utilities-terminal
-Categories=System;TerminalEmulator;
-X-XFCE-Source=file:///usr/share/applications/urxvt-rxvt-unicode.desktop

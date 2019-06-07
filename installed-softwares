@@ -34,11 +34,7 @@ x11-apps/setxkbmap
 
 x11-libs/startup-notification
 
-x11-libs/vte
-
 x11-misc/compton
-
-x11-misc/gtkdialog
 
 x11-misc/nitrogen
 
@@ -68,8 +64,6 @@ xfce-base/exo
 
 xfce-base/thunar
 
-xfce-base/xfce4-panel
-
 xfce-base/xfce4-settings
 
 xfce-extra/thunar-archive-plugin
@@ -78,5 +72,5 @@ xfce-extra/thunar-volman
 
 xfce-extra/tumbler
 
-
+jgmenu (https://github.com/johanmalm/jgmenu.git)
 
