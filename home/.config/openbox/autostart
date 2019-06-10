@@ -44,35 +44,35 @@ sleep 4; pnmixer &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Tastierino numerico.
 
-sleep 5; numlockx &
+sleep 1; numlockx &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Icona Rete.
 
-sleep 6; nm-applet --sm-disable &
+sleep 2; nm-applet --sm-disable &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Aggiorna nomi cartelle
 
-sleep 7; xdg-user-dirs-gtk-update &
+sleep 3; xdg-user-dirs-gtk-update &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Visualizza i desktop in finestre
+#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Desktop Virtuali
 
-#sleep 8; skippy --config ~/.skippyrc --start-daemon &
+#sleep 4; skippy --config ~/.skippyrc --start-daemon &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Monitor di Sistema.
 
-sleep 9; conky --daemonize
+sleep 1; conky --daemonize
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Cache di Digitazione
 
-sleep 10; parcellite &
+sleep 2; parcellite &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Terminale DropDown
 
-sleep 11; xfce4-terminal --drop-down
+sleep 3; xfce4-terminal --drop-down
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Radio Deejay
 
-sleep 12; vlc /home/ilnanny/bin/radio_deejay.m3u8 &
+sleep 4; vlc /home/ilnanny/bin/radio_deejay.m3u8 &
 
 #______________________________________________________________________________________
 #                                        Fine

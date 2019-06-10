@@ -39,7 +39,6 @@
       <property name="F4" type="string" value="xfce4-terminal --drop-down"/>
       <property name="&lt;Alt&gt;w" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Alt&gt;f" type="string" value="exo-open --launch FileManager"/>
-      <property name="Print" type="string" value="xfce4-screenshooter"/>
       <property name="KP_Add" type="string" value="skippy-xd"/>
     </property>
   </property>
