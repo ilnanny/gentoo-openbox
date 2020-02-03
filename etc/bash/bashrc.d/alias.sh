@@ -21,7 +21,7 @@ alias chown='chown --preserve-root'
 alias cp="cp -v"
 alias df='df -h'
 alias egrep='egrep --color=auto'
-alias emoji='cat /$USER/bin/ascii-emoji'
+alias emoji='cat /home/ilnanny/bin/ascii-emoji'
 alias eps2svg='for i in *; do inkscape $i --export-plain-svg=`echo $i | sed -e s/eps$/svg/`; done'
 alias fc='sudo fc-cache -fv'
 alias fgrep='fgrep --color=auto'
@@ -40,13 +40,13 @@ alias ll='ls -la'
 alias ln="ln -v"
 alias lp='sudo leafpad'
 alias ls="ls --group-directories-first --dereference-command-line-symlink-to-dir --color=auto"
-alias ls='ls --color=auto'
+alias lsx='sudo lshw -X'
 alias lsbk='lsblk -o +fstype,label,uuid,partuuid'
 alias meteo='curl wttr.in/Taranto'
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 alias mp='sudo mousepad'
 alias mv="mv -v"
-alias myscript='geany /$USER/bin/zz-ilnanny'
+alias myscript='geany /home/ilnanny/bin/zz-ilnanny'
 alias nn='sudo nano'
 alias pgrep="pgrep -l"
 alias ping='ping -c www.google.com'
@@ -68,29 +68,27 @@ alias youtube-video="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[e
 
 
 alias ath='su -c "zcat /proc/config.gz | grep CONFIG_ATH"'
-alias backup='sh /$USER/bin/backup'
-alias blb='sh /$USER/bin/bleachbit1'
-alias cleaner='sh /$USER/bin/cleaner'
+alias backup='sh /home/ilnanny/bin/backup'
+alias blb='sh /home/ilnanny/bin/bleachbit1'
+alias cleaner='sh /home/ilnanny/bin/cleaner'
 alias clone='cd ~/Git && git clone'
 alias fstab='sudo geany /etc/fstab'
-alias gitup='sh /$USER/bin/gitup'
+alias gitup='sh /home/ilnanny/bin/gitup'
 alias goapp='sudo thunar /usr/share/applications/'
 alias goicon='sudo thunar /usr/share/icons/'
 alias goportage='sudo thunar /etc/portage/'
 alias gotheme='sudo thunar /usr/share/themes/'
-alias goscript='sudo thunar /$USER/bin/'
+alias goscript='sudo thunar /home/ilnanny/bin/'
 alias gowall='sudo thunar /usr/share/backgrounds/'
 alias godotfiles='thunar /media/Dati/Git/Dotfiles/'
 alias gogit='thunar /media/Dati/Git/'
-alias gowiki='thunar /media/Dati/Git/Dotfile/01-Files/Wiki-Memo-txt/Gentoo/'
+alias gowiki='thunar /media/Dati/Git/Dotfiles/01-Files/Wiki/Gentoo-wiki/'
 alias mioscript='geany /media/Dati/Git/Dotfile/Scripts/zz-ilnanny'
-alias memousb='sh /$USER/bin/usblist'
+alias memousb='sh /home/ilnanny/bin/usblist'
 alias myip=' sudo wget -qO- http://ipecho.net/plain'
 alias showalias='cat /etc/bash/bashrc.d/alias.sh'
-alias usblist='su -c "sh /$USER/bin/usblist"'
+alias usblist='su -c "sh /home/ilnanny/bin/usblist"'
 alias wiki="cd /media/Dati/Git/Dotfiles/01-Files/Wiki/Gentoo-wiki && whereis"
-
-
 # ___        Alias Gentoo
 
 

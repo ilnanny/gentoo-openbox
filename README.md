@@ -36,7 +36,7 @@ Gnu Linux Theme     : https://github.com/ilnanny/linux-themes<br>
 ___________________________________________________________________________________________________________________________
 
 <hr align=”left” size=”1″ width=”300″ color=”red” noshade>
-Screenshot 'Blue_Minions'
+Screenshot 'Patu'
 <img src="https://raw.githubusercontent.com/ilnanny/Dotfiles/master/screen.png?raw=true"screen">
 <hr align=”left” size=”1″ width=”300″ color=”red” noshade>
 Screenshot 'MyBrown_PinUp'

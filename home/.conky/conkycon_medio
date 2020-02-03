@@ -110,20 +110,6 @@ ${color0}${font ConkyColors:size=16}m${font}${color}
 ${goto 32}${voffset -23}${goto 32}CPU3: ${font Coda::size=10}${color1}${cpu cpu2}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu3 }${color}
 ${color0}${font ConkyColors:size=16}m${font}${color}
 ${goto 32}${voffset -23}${goto 32}CPU4: ${font Coda::size=10}${color1}${cpu cpu3}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu4 }${color}
-${voffset 4}${color0}${font ConkyColors:size=16}m${font}${offset -23}${voffset 10}${color}${voffset -16}${goto 32}CPU5: ${font Coda:size=10}${color1}${cpu cpu4}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu1 }${color}
-${color0}${font ConkyColors:size=16}m${font}${color}
-${goto 32}${voffset -23}${goto 32}CPU6: ${font Coda::size=10}${color1}${cpu cpu5}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu2 }${color}
-${color0}${font ConkyColors:size=16}m${font}${color}
-${goto 32}${voffset -23}${goto 32}CPU7: ${font Coda::size=10}${color1}${cpu cpu6}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu3 }${color}
-${color0}${font ConkyColors:size=16}m${font}${color}
-${goto 32}${voffset -23}${goto 32}CPU8: ${font Coda::size=10}${color1}${cpu cpu7}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu4 }${color}
-${voffset 4}${color0}${font ConkyColors:size=16}m${font}${offset -23}${voffset 10}${color}${voffset -16}${goto 32}CPU9: ${font Coda:size=10}${color1}${cpu cpu8}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu1 }${color}
-${color0}${font ConkyColors:size=16}m${font}${color}
-${goto 32}${voffset -23}${goto 32}CPU10: ${font Coda::size=10}${color1}${cpu cpu9}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu9 }${color}
-${color0}${font ConkyColors:size=16}m${font}${color}
-${goto 32}${voffset -23}${goto 32}CPU11: ${font Coda::size=10}${color1}${cpu cpu10}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu3 }${color}
-${color0}${font ConkyColors:size=16}m${font}${color}
-${goto 32}${voffset -23}${goto 32}CPU12: ${font Coda::size=10}${color1}${cpu cpu11}%${color}${font} ${alignr}${color2}${cpubar 8,60 cpu4 }${color}
 #-------------------------------------
 #-- Memoria
 #-------------------------------------

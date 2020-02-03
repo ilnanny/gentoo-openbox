@@ -1,79 +1,100 @@
-#______________________________________________________________________________________
+#________________________________________________________________________________
 #
-#                        OpenBox Softwares and Daemons Start
-#______________________________________________________________________________________
+#                       OpenBox Softwares and Daemons Start
+#________________________________________________________________________________
 #
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Ambiente Grafico.
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Ambiente Grafico.
 
 DESKTOP_ENV="OPENBOX"
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Polkit Gnome.
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Polkit Gnome.
 
-sleep 1; /usr/libexec/polkit-gnome-authentication-agent-1 &
+/usr/libexec/polkit-gnome-authentication-agent-1 &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Layaout Tastiera.
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Layaout Tastiera.
 
 setxkbmap it
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Impostazioni XFCE.
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Impostazioni XFCE.
 
 xfsettingsd &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Sfondo Desktop.
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Sfondo Desktop.
 
 #feh --bg-scale /usr/share/backgrounds/${WALLPAPER} &
 #WALLPAPER="rockyduck.png"
 nitrogen --restore &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Trasparenze.
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Trasparenze.
 #compositor --start &
 sleep 1; compton &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Pannelli/Dock.
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Pannelli-Dock.
 
 sleep 2; tint2 -c ~/.config/tint2/transoriz.tint2rc &
-sleep 3; tint2 -c ~/.config/tint2/transvert.tint2rc &
+sleep 2; tint2 -c ~/.config/tint2/transvert.tint2rc &
 #sleep 2; xfce4-panel &
 #sleep 2; tint2-session --start &
 #sleep 2; polybar-session &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Icona Volume.
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Icona Volume.
 
 #sleep 4; volumeicon &
 sleep 4; pnmixer &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Tastierino numerico.
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > NumLock ON.
 
 sleep 1; numlockx &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Icona Rete.
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Icona Rete.
 
 sleep 2; nm-applet --sm-disable &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Aggiorna nomi cartelle
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Notifiche
+exec dunst &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Super-Key
+
+#ksuperkey -e 'Super_L=Alt_L|F1' &
+#ksuperkey -e 'Super_R=Alt_L|F1' &
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Beep di sistema
+
+xset b off
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Impostazioni X.
+
+xrdb -merge .Xresources
+
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Nomi Cartelle
 
 sleep 3; xdg-user-dirs-gtk-update &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Desktop Virtuali
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Desktop Virtuali
 
-#sleep 4; skippy --config ~/.skippyrc --start-daemon &
+#skippyrc --config ~/.skippyrc --start-daemon &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Monitor di Sistema.
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Conky.
 
-sleep 1; conky --daemonize
+sleep 5; conky --daemonize
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Cache di Digitazione
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Clipboard Manager.
 
+#sleep 2; clipit &
 sleep 2; parcellite &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Terminale DropDown
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Terminale DropDown.
 
 sleep 3; xfce4-terminal --drop-down
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- >  Radio Deejay
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Radio Deejay.
 
 sleep 4; vlc /home/ilnanny/bin/radio_deejay.m3u8 &
 
-#______________________________________________________________________________________
-#                                        Fine
-#______________________________________________________________________________________
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Email Manager.
+
+sleep 6; thunderbird &
+
+#_________________________________________________________________________________
+#                                     Fine
+#_________________________________________________________________________________

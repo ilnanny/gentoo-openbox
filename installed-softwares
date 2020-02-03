@@ -20,6 +20,8 @@ gnome-extra/polkit-gnome
 
 gnome-extra/zenity
 
+lxde-base/lxappearance
+
 lxde-base/lxdm
 
 media-fonts/dejavu

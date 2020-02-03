@@ -1,0 +1,39 @@
+# Questo file viminfo è stato generato da Vim 8.1.
+# File modificabile, attento a quel che fai!
+
+# Viminfo version
+|1,4
+
+# Valore di 'encoding' al momento della scrittura di questo file
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~H
+# Riga di Comando Storia (da più recente a meno recente):
+:q
+|2,0,1558154597,,"q"
+
+# Stringa di Ricerca Storia (da più recente a meno recente):
+
+# Espressione Storia (da più recente a meno recente):
+
+# Riga di Input Storia (da più recente a meno recente):
+
+# Riga di Debug Storia (da più recente a meno recente):
+
+# Registri:
+
+# File mark:
+'0  1  0  ~/collegamenti-home
+|4,48,1,0,1558154597,"~/collegamenti-home"
+
+# Jumplist (dai più recenti):
+-'  1  0  ~/collegamenti-home
+|4,39,1,0,1558154597,"~/collegamenti-home"
+
+# Storia dei mark all'interno dei file (dai più recenti ai meno recenti):
+
+> ~/collegamenti-home
+	*	1558154593	0
+	"	1	0

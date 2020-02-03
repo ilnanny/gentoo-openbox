@@ -1,1 +1,1 @@
-conky -c ~/.config/conky/.conkyrc & sleep 5
+conky -c /home/ilnanny/.config/conky/.conkyrc & sleep 1
