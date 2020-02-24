@@ -1,9 +1,16 @@
-! -------------------------------------------------------------
-! theme colors >  Dracula Xresources palette
-! -------------------------------------------------------------
-*.foreground: #F8F8F2
-*.background: #282A36
-*.color0:     #000000
+
+! ================================================
+! =  O.S.      : Gnu Linux                       =
+! =  Author    : Cristian Pozzessere   = ilnanny =
+! =  D.A.Page  : http://ilnanny.deviantart.com   =
+! =  Github    : https://github.com/ilnanny      =
+! ================================================
+! ------------------------------------------------
+! Theme Colors
+! ------------------------------------------------
+*.foreground: #F2F6FC
+*.background: #535353
+*.color0:     #333333
 *.color8:     #4D4D4D
 *.color1:     #FF5555
 *.color9:     #FF6E67
@@ -27,7 +34,7 @@
 xterm*font: Monospace
 xterm*faceName: Monospace:size=11:antialias=false
 xterm*loginShell: true
-xterm*vt100*geometry: 130x28
+xterm*vt100*geometry: 90x24
 xterm*saveLines: 2000
 xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
 xterm*termName: xterm-256color
@@ -40,7 +47,7 @@ URxvt*saveline: 15000
 URxvt*termName: rxvt-256color
 URxvt*iso14755: false
 URxvt*depth: 32
-URxvt*background: [90]#424860
+URxvt*background: [90]#535353
 URxvt*scrollBar: false
 URxvt*scrollBar_right: false
 URxvt*internalBorder: 0
@@ -87,8 +94,8 @@ UXTerm*toolBar: false
 ! -------------------------------------------------------------
 rofi.font: Monospace 11
 rofi.color-enabled: true
-rofi.color-window: #424860, #424860, #424860
-rofi.color-normal: #424860, #C0C5CE, #424860, #8FA1B3, #424860
+rofi.color-window: #535353, #535353, #535353
+rofi.color-normal: #535353, #C5CAD6, #535353, #8892C2, #535353
 rofi.separator-style: solid
 ! -------------------------------------------------------------
 ! Cursor

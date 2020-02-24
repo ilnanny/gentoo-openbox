@@ -32,29 +32,27 @@ item_border          = 0
 
 sep_height           = 5
 
-font                 = Roboto 12px
-color_font           = #EBEEF6
+font                 = Decker : 14px
+color_font           = #FFFFFF
 icon_size            = 24
 
 
 icon_theme           = Lila_HD
 
-color_menu_bg        = #525866
-color_menu_fg        = #2A3040
+color_menu_bg        = #474747
+color_menu_fg        = #D2D2D2
 
-color_menu_border    = #525866
+color_menu_border    = #474747
 
-color_norm_bg        = #525866
-color_norm_fg        = #2A3040
+color_norm_bg        = #474747
+color_norm_fg        = #D2D2D2
 
 color_sel_bg         = #768199
-color_sel_fg         = #2A3040
-color_sel_border     = #525866
+color_sel_fg         = #D2D2D2
+color_sel_border     = #474747
 
-color_sep_fg         = #525866
+color_sep_fg         = #474747
 
-
-icon_theme           = Lila_HD
 
 #______________________________________
 

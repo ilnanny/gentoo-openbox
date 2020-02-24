@@ -35,7 +35,7 @@ filter_unmatched_urls = true
 #cursor = #dcdccc
 foreground = #FFFFFF
 foreground_bold = #DDDDDD
-background = #window_color
+background = #
 
 # if unset, will reverse foreground and background
 highlight = #2f2f2f

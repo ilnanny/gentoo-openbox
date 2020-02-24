@@ -4,96 +4,81 @@
 #________________________________________________________________________________
 #
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Ambiente Grafico.
-
 DESKTOP_ENV="OPENBOX"
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Polkit Gnome.
-
 /usr/libexec/polkit-gnome-authentication-agent-1 &
 
-#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Layaout Tastiera.
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Wifi.
+sudo nmcli device wifi connect FASTWEB-E06CD5 password 6R87ATWE7R
 
+#  --  --  --  --  --  --  --  --  --  --  --  --  -- > Tastiera.
 setxkbmap it
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Impostazioni XFCE.
-
 xfsettingsd &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Sfondo Desktop.
-
 #feh --bg-scale /usr/share/backgrounds/${WALLPAPER} &
 #WALLPAPER="rockyduck.png"
 nitrogen --restore &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Trasparenze.
 #compositor --start &
-sleep 1; compton &
+compton &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Pannelli-Dock.
-
-sleep 2; tint2 -c ~/.config/tint2/transoriz.tint2rc &
-sleep 2; tint2 -c ~/.config/tint2/transvert.tint2rc &
-#sleep 2; xfce4-panel &
-#sleep 2; tint2-session --start &
-#sleep 2; polybar-session &
+sleep 1; tint2 -c ~/.config/tint2/transoriz.tint2rc &
+#sleep 1; tint2 -c ~/.config/tint2/transvert.tint2rc &
+sleep 1; xfce4-panel &
+#sleep 1; tint2-session --start &
+#sleep 1; polybar-session &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Icona Volume.
-
-#sleep 4; volumeicon &
-sleep 4; pnmixer &
+sleep 2; volumeicon &
+sleep 2; pnmixer &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > NumLock ON.
-
 sleep 1; numlockx &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Icona Rete.
-
-sleep 2; nm-applet --sm-disable &
+nm-applet --sm-disable &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Notifiche
-exec dunst &
+dunst &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Super-Key
-
 #ksuperkey -e 'Super_L=Alt_L|F1' &
 #ksuperkey -e 'Super_R=Alt_L|F1' &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Beep di sistema
-
 xset b off
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Impostazioni X.
-
 xrdb -merge .Xresources
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Nomi Cartelle
-
-sleep 3; xdg-user-dirs-gtk-update &
+sleep 2; xdg-user-dirs-gtk-update &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Desktop Virtuali
-
 #skippyrc --config ~/.skippyrc --start-daemon &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Conky.
-
-sleep 5; conky --daemonize
+sleep 2; conky --daemonize
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Clipboard Manager.
-
-#sleep 2; clipit &
-sleep 2; parcellite &
+#sleep 1; clipit &
+sleep 1; parcellite &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Terminale DropDown.
-
-sleep 3; xfce4-terminal --drop-down
+sleep 1; xfce4-terminal --drop-down
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Radio Deejay.
-
-sleep 4; vlc /home/ilnanny/bin/radio_deejay.m3u8 &
+sleep 2; vlc /home/ilnanny/bin/radio.xspf &
 
 #  --  --  --  --  --  --  --  --  --  --  --  --  -- > Email Manager.
-
-sleep 6; thunderbird &
+sleep 2; thunderbird-bin &
+#sleep 2; thunderbird &
 
 #_________________________________________________________________________________
 #                                     Fine

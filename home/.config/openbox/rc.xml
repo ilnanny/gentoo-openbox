@@ -19,43 +19,43 @@
     <primaryMonitor>2</primaryMonitor>
   </placement>
   <theme>
-    <name>darky</name>
+    <name>Larry-Dark</name>
     <titleLayout>LIMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Decker</name>
-      <size>10</size>
+      <size>11</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
       <name>Decker</name>
-      <size>10</size>
+      <size>11</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>Cursor</name>
+      <name>Segoe UI</name>
       <size>11</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>Cursor</name>
-      <size>10</size>
+      <name>Segoe UI</name>
+      <size>11</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Cursor</name>
-      <size>10</size>
+      <name>Segoe UI</name>
+      <size>11</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Cursor</name>
-      <size>10</size>
+      <name>Segoe UI</name>
+      <size>11</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>

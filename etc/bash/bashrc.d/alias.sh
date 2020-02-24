@@ -16,6 +16,7 @@ alias 7zip='7za a -t7z -mx=9 -mfb=256 -md=256m -ms=on'
 alias bashome="sudo geany ~/.bashrc"
 alias adb="sudo adb"
 alias blkid='sudo blkid -c /dev/null -o list'
+alias cat='cat -n'
 alias chgrp='chgrp --preserve-root'
 alias chown='chown --preserve-root'
 alias cp="cp -v"
@@ -78,77 +79,21 @@ alias gitup='sh /home/ilnanny/bin/gitup'
 alias goapp='sudo thunar /usr/share/applications/'
 alias gobash='sudo thunar /etc/bash'
 alias goicon='sudo thunar /usr/share/icons/'
+alias goos='sudo thunar /media/Dati/OS/Linux/'
 alias goportage='sudo thunar /etc/portage/'
 alias gotheme='sudo thunar /usr/share/themes/'
 alias goscript='sudo thunar /home/ilnanny/bin/'
 alias gowall='sudo thunar /usr/share/backgrounds/'
 alias godotfiles='thunar /media/Dati/Git/Dotfiles/'
 alias gogit='thunar /media/Dati/Git/'
-alias gowiki='thunar /media/Dati/Git/Dotfiles/01-Files/Wiki/Gentoo-wiki/'
+alias gowiki='thunar /media/Dati/Git/Dotfiles/Wiki/'
 alias mioscript='geany /media/Dati/Git/Dotfile/Scripts/zz-ilnanny'
 alias memousb='sh /home/ilnanny/bin/usblist'
 alias myip=' sudo wget -qO- http://ipecho.net/plain'
 alias showalias='cat /etc/bash/bashrc.d/alias.sh'
 alias usblist='su -c "sh /home/ilnanny/bin/usblist"'
-alias wiki="cd /media/Dati/Git/Dotfiles/01-Files/Wiki/Gentoo-wiki && whereis"
+alias wiki='cd /media/Dati/Git/Dotfiles/01-Files/Wiki/Gentoo-wiki && whereis'
 
 
-# ___        Alias Gentoo
-
-
-alias ask='sudo emerge --ask'
-alias aut='sudo emerge --autounmask-write'
-alias backup="tar -cjpP --ignore-failed-read --exclude=/home/*/.bash_history --exclude=/dev/* --exclude=/media/* --exclude=/mnt/*/* --exclude=/proc/* --exclude=/run/* --exclude=/sys/* --exclude=/tmp/* --exclude=/var/lock/* --exclude=/var/log/* --exclude=/var/run/* -f /media/Dati/backup_T3500.tar.bz2 /*"
-alias dup='sudo emerge -Dup world'
-alias emc='sudo emerge -C'
-alias emdc='sudo emerge --depclean --ask'
-alias emp='sudo emerge -pv'
-alias ems='sudo emerge -S'
-alias emun='sudo emerge --unmerge'
-alias emus='sudo emerge -uDN system'
-alias emuw='sudo emerge -uDN world'
-alias empr='sudo emerge @preserved-rebuild'
-alias et='sudo etc-update'
-alias eup='sudo env-update && source /etc/profile'
-alias evp='emerge -evp --deep world'
-alias fsync='sudo ego sync'
-alias install='sudo emerge'
-alias lay='sudo layman -S'
-alias locate='sudo locate'
-alias log='sudo thunar /var/log/'
-alias lop='sudo genlop -c'
-alias mconf='sudo geany /etc/portage/make.conf'
-alias nodeps='sudo emerge --nodeps'
-alias noreplace='sudo emerge --noreplace'
-alias oneshot='sudo emerge --oneshot'
-alias pak='sudo geany /etc/portage/package.accept_keywords'
-alias pm='sudo thunar /etc/portage/package.mask'
-alias pu='sudo thunar /etc/portage/package.use'
-alias rdr='sudo revdep-rebuild -iq'
-alias search='sudo emerge --search'
-alias src='sudo thunar /usr/src'
-alias sync='sudo emerge --sync'
-alias update='sudo emerge --update --nospinner --noreplace world'
-alias upgrade='su -c "emerge --update --deep --with-bdeps=y --newuse --verbose-conflict --autounmask-write world ||etc-update"'
-alias vs='sudo emerge -vs'
-alias world='sudo geany /var/lib/portage/world'
-
-# ___        Equery   alias
-
-alias eqb='equery b'         # = a quale pacchetto appartiene
-alias eqc='equery c'         # = il changeLog  di ..
-alias eqd='equery d'         # = i pacchetti dipendenti  da ..
-alias eqf='equery f'         # = i files installati da ..
-alias eqg='equery g'         # = le dipendenze circolari  di ..
-alias eqh='equery h'         # = i pacchetti che hanno una specifica USE
-alias eqk='equery k'         # = integrità/MD5  di ..
-alias eql="equery list '*'"  # = elenca tutti i pacchetti (+'*' apici )
-alias eqm='equery m'         # = visualizza il pacchetto metadata
-alias eqs='equery s'         # = la dimensione del pacchetto
-alias equ='equery u'         # = le USE flags per il pacchetto
-alias eqw='equery w'         # = il percorso dell'ebuild di ..
-alias eqy='equery y'         # = tutte le versioni disponibili di ..
-
-
-# ___            Fine
+# ___     Fine
 

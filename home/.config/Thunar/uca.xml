@@ -190,4 +190,13 @@
 	<patterns>*.svg</patterns>
 	<image-files/>
 </action>
+<action>
+	<icon>image-png</icon>
+	<name>Svg2Png</name>
+	<unique-id>1561802536679730-2</unique-id>
+	<command>for i in *; do inkscape $i -C --export-png=`echo $i | sed -e s/svg$/png/`; done</command>
+	<description>esporta immagine png da un file svg</description>
+	<patterns>*.svg</patterns>
+	<image-files/>
+</action>
 </actions>

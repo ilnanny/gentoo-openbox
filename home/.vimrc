@@ -1,54 +1,52 @@
-" Sane vim
-
+" == UTF8
 scriptencoding utf8
 
-" Defaults
-runtime! gentoo.vim
-
-" system clipboard (requires +clipboard)
+" == Default
 set clipboard^=unnamed,unnamedplus
 
-" additional settings
-set modeline           " enable vim modelines
-set hlsearch           " highlight search items
-set incsearch          " searches are performed as you type
-set number             " enable line numbers
-set confirm            " ask confirmation like save before quit.
-set wildmenu           " Tab completion menu when using command mode
-set expandtab          " Tab key inserts spaces not tabs
-set softtabstop=4      " spaces to enter for each tab
-set shiftwidth=4       " amount of spaces for indentation
-set shortmess+=aAcIws  " Hide or shorten certain messages
+" == additional settings
+set modeline           " == enable vim modelines
+set hlsearch           " == highlight search items
+set incsearch          " == searches are performed as you type
+set number             " == enable line numbers
+set confirm            " == ask confirmation like save before quit.
+set wildmenu           " == Tab completion menu when using command mode
+set expandtab          " == Tab key inserts spaces not tabs
+set softtabstop=4      " == spaces to enter for each tab
+set shiftwidth=4       " == amount of spaces for indentation
+set shortmess+=aAcIws  " == Hide or shorten certain messages
 
 let g:netrw_altv = 1
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 3
 
-" ------ leader mapping ------
+" ======= leader mapping =======
 
 let g:mapleader = "\<Space>"
 
-" ------ enable additional features ------
+" ======= additional features =======
 
-" enable mouse
+" == enable mouse
 set mouse=a
 if has('mouse_sgr')
-    " sgr mouse is better but not every term supports it
+    " == sgr mouse is better but not every term supports it
     set ttymouse=sgr
 endif
 
-" syntax highlighting
+" == syntax highlighting
 syntax enable
 
 set linebreak breakindent
 set list listchars=tab:>>,trail:~
 
 syntax on
-color zenburn
+
+" == Colors
+color jinx
 
 if $TERM !=? 'linux'
     set termguicolors
-    " true colors in terminals (neovim doesn't need this)
+    " == true colors in terminals (neovim doesn't need this)
     if !has('nvim') && !($TERM =~? 'xterm' || &term =~? 'xterm')
         let $TERM = 'xterm-256color'
         let &term = 'xterm-256color'
@@ -59,7 +57,7 @@ if $TERM !=? 'linux'
     endif
 endif
 
-" change cursor shape for different editing modes, neovim does this by default
+" == change cursor shape for different editing modes, neovim does this by default
 if !has('nvim')
     if exists('$TMUX')
         let &t_SI = "\<Esc>Ptmux;\<Esc>\e[5 q\<Esc>\\"
@@ -72,7 +70,14 @@ if !has('nvim')
     endif
 endif
 
-" ------ commands ------
+" ======= powerline =======
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+" Always show statusline
+set laststatus=2
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
+
+" ======= commands =======
 
 command! D Explore
 command! R call <SID>ranger()
@@ -80,42 +85,42 @@ command! Q call <SID>quitbuffer()
 command! -nargs=1 B :call <SID>bufferselect("<args>")
 command! W execute 'silent w !sudo tee % >/dev/null' | edit!
 
-" ------ basic maps ------
+" ======= basic maps =======
 
-" open ranger as a file chooser using the function below
+" == open ranger as a file chooser using the function below
 nnoremap <leader>r :call <SID>ranger()<CR>
 
-" match string to switch buffer
+" == match string to switch buffer
 nnoremap <Leader>b :let b:buf = input('Match: ')<Bar>call <SID>bufferselect(b:buf)<CR>
 
-" change windows with ctrl+(hjkl)
+" == change windows with ctrl+(hjkl)
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" alt defaults
+" == alt defaults
 nnoremap 0 ^
 nnoremap Y y$
 nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap <Tab> ==1j
 
-" re-visual text after changing indent
+" == re-visual text after changing indent
 vnoremap > >gv
 vnoremap < <gv
 
-" toggle line numbers, nn (no number)
+" == toggle line numbers, nn (no number)
 nnoremap <silent> <Leader>nn :set number!
 
-" gj/k but preserve numbered jumps ie: 12j or 45k
+" == gj/k but preserve numbered jumps ie: 12j or 45k
 nmap <buffer><silent><expr>j v:count ? 'j' : 'gj'
 nmap <buffer><silent><expr>k v:count ? 'k' : 'gk'
 
-" open a terminal in $PWD
+" == open a terminal in $PWD
 nnoremap <silent> <Leader>tt :terminal<CR>
 
-" tab control
+" == tab control
 nnoremap <silent> <M-j> :tabmove -1<CR>
 nnoremap <silent> <M-k> :tabmove +1<CR>
 nnoremap <silent> <Leader>te :tabnew<CR>
@@ -123,34 +128,34 @@ nnoremap <silent> <Leader>tn :tabnext<CR>
 nnoremap <silent> <Leader>tf :tabfirst<CR>
 nnoremap <silent> <Leader>tp :tabprevious<CR>
 
-" close current buffer and/or tab
+" == close current buffer and/or tab
 nnoremap <silent> <Leader>q :B<CR>:silent tabclose<CR>gT
 
-" open a new tab in the current directory with netrw
+" == open a new tab in the current directory with netrw
 nnoremap <silent> <Leader>- :tabedit <C-R>=expand("%:p:h")<CR><CR>
 
-" split the window vertically and horizontally
+" == split the window vertically and horizontally
 nnoremap _ <C-W>s<C-W><Down>
 nnoremap <Bar> <C-W>v<C-W><Right>
 
 
-" ------ autocmd ------
+" ======= autocmd =======
 
-" Reload changes if file changed outside of vim requires autoread
+" == Reload changes if file changed outside of vim requires autoread
 augroup load_changed_file
     autocmd!
     autocmd FocusGained,BufEnter * if mode() !=? 'c' | checktime | endif
     autocmd FileChangedShellPost * echo "Changes loaded from source file"
 augroup END
 
-" when quitting a file, save the cursor position
+" == when quitting a file, save the cursor position
 augroup save_cursor_position
     autocmd!
     autocmd BufReadPost * call setpos(".", getpos("'\""))
 augroup END
 
-" when not running in a console or a terminal that doesn't support 256 colors
-" enable cursorline in the currently active window and disable it in inactive ones
+" == when not running in a console or a terminal that doesn't support 256 colors
+" == enable cursorline in the currently active window and disable it in inactive ones
 if $DISPLAY !=? '' && &t_Co == 256
     augroup cursorline
         autocmd!
@@ -159,10 +164,10 @@ if $DISPLAY !=? '' && &t_Co == 256
     augroup END
 endif
 
-" ------ adv maps ------
+" ======= adv maps =======
 
 
-" strip trailing whitespace, ss (strip space)
+" == strip trailing whitespace, ss (strip space)
 nnoremap <silent> <Leader>ss
     \ :let b:_p = getpos(".") <Bar>
     \  let b:_s = (@/ != '') ? @/ : '' <Bar>
@@ -173,7 +178,7 @@ nnoremap <silent> <Leader>ss
     \  call setpos('.', b:_p) <Bar>
     \  unlet b:_p <CR>
 
-" global replace
+" == global replace
 vnoremap <Leader>sw "hy
     \ :let b:sub = input('global replacement: ') <Bar>
     \ if b:sub !=? '' <Bar>
@@ -188,7 +193,7 @@ nnoremap <Leader>sw
     \   unlet b:sub <Bar>
     \ endif <CR>
 
-" prompt before each replace
+" == prompt before each replace
 vnoremap <Leader>cw "hy
     \ :let b:sub = input('interactive replacement: ') <Bar>
     \ if b:sub !=? '' <Bar>
@@ -204,7 +209,7 @@ nnoremap <Leader>cw
     \   unlet b:sub <Bar>
     \ endif <CR>
 
-" highlight long lines, ll (long lines)
+" == highlight long lines, ll (long lines)
 let w:longlines = matchadd('ColorColumn', '\%'.&textwidth.'v', &textwidth)
 nnoremap <silent> <Leader>ll
     \ :if exists('w:longlines') <Bar>
@@ -219,17 +224,17 @@ nnoremap <silent> <Leader>ll
     \   echo 'Long line highlighting enabled'
     \ <Bar> endif <CR>
 
-" local keyword jump
+" == local keyword jump
 nnoremap <Leader>fw
     \ [I:let b:jump = input('Go To: ') <Bar>
     \ if b:jump !=? '' <Bar>
-    \   execute "normal! ".b:jump."[\t" <Bar>
+    \   execute "normal! ".b:jump."[\t" == <Bar>
     \   unlet b:jump <Bar>
     \ endif <CR>
 
 
-" quit the current buffer and switch to the next
-" without this vim will leave you on an empty buffer after quiting the current
+" == quit the current buffer and switch to the next
+" == without this vim will leave you on an empty buffer after quiting the current
 function! <SID>quitbuffer() abort
     let l:bf = bufnr('%')
     let l:pb = bufnr('#')
@@ -246,14 +251,14 @@ function! <SID>quitbuffer() abort
     endif
 endfunction
 
-" switch active buffer based on pattern matching
-" if more than one match is found then list the matches to choose from
+" == switch active buffer based on pattern matching
+" == if more than one match is found then list the matches to choose from
 function! <SID>bufferselect(pattern) abort
     let l:bufcount = bufnr('$')
     let l:currbufnr = 1
     let l:nummatches = 0
     let l:matchingbufnr = 0
-    " walk the buffer count
+    " == walk the buffer count
     while l:currbufnr <= l:bufcount
         if (bufexists(l:currbufnr))
             let l:currbufname = bufname(l:currbufnr)
@@ -266,11 +271,11 @@ function! <SID>bufferselect(pattern) abort
         let l:currbufnr += 1
     endwhile
 
-    " only one match
+    " == only one match
     if (l:nummatches == 1)
         execute ':buffer '.l:matchingbufnr
     elseif (l:nummatches > 1)
-        " more than one match
+        " == more than one match
         let l:desiredbufnr = input('Enter buffer number: ')
         if (strlen(l:desiredbufnr) != 0)
             execute ':buffer '.l:desiredbufnr
@@ -280,7 +285,7 @@ function! <SID>bufferselect(pattern) abort
     endif
 endfunction
 
-" open ranger as a file chooser
+" == open ranger as a file chooser
 function! <SID>ranger()
     let l:temp = tempname()
     execute 'silent !xterm -e ranger --choosefiles='.shellescape(l:temp).' $PWD'

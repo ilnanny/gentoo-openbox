@@ -1,5 +1,5 @@
 [Desktop]
-Language=it_IT.utf8
-Session=openbox
+Session=xfce
 Setxkbmap=it
-
+L10N="it"
+LANG="it_IT.utf8"
