@@ -1,80 +1,23 @@
-Gentoo base + Xorg + (alphabetical order):
+Gentoo base + Xorg +
 
-app-admin/conky
+=== Openbox
+ emerge --ask openbox obmenu-generator obtheme obconf xrandr nitrogen ranger rofi tint2 dunst
 
-app-misc/neofetch
+ emerge --ask  x11-misc/tintwizard volumeicon x11-misc/compton lxappearance xfce4-screenshooter
 
-app-misc/ranger
+ emerge --ask xfce4-panel xfce4-terminal keybinder
 
-app-vim/zenburn
+=== Thunar
+ emerge --ask thunar thunar-volman thunar-archive-plugin
 
-dev-util/geany
+ = Daemon
+ rc-update add dbus default
 
-dev-util/xfce4-dev-tools
+=== Conky
+ USE="X curl -static-libs iconv ipv6 ncurses portmon truetype wifi hddtemp imlib lua-cairo lua-imlib lua-rsvg math mpd nano-syntax rss vim-syntax weather-metar webserver xmms2" emerge --ask app-admin/conky
 
-gnome-base/gnome-keyring
-
-gnome-extra/nm-applet
-
-gnome-extra/polkit-gnome
-
-gnome-extra/zenity
-
-lxde-base/lxappearance
-
-lxde-base/lxdm
-
-media-fonts/dejavu
-
-media-gfx/scrot
-
-media-sound/pnmixer
-
-www-client/surfraw
-
-x11-apps/setxkbmap
-
-x11-libs/startup-notification
-
-x11-misc/compton
-
-x11-misc/nitrogen
-
-x11-misc/notification-daemon
-
-x11-misc/obconf
-
-x11-misc/obmenu-generator
-
-x11-misc/polybar
-
-x11-misc/obmenu-generator
-
-x11-misc/rofi
-
-x11-misc/skippy
-
-x11-misc/tint2
-
-x11-misc/xdg-utils
-
-x11-terms/xfce4-terminal
-
-x11-terms/xterm
-
-x11-wm/openbox
-
-xfce-base/exo
-
-xfce-base/thunar
-
-xfce-base/xfce4-settings
-
-xfce-extra/thunar-archive-plugin
-
-xfce-extra/thunar-volman
-
-xfce-extra/tumbler
+=== Vlc
+ USE="X dbus encode ffmpeg jpeg libnotify ncurses png qt5 ssl svg truetype udev xml a52 alsa dvd flac fontconfig gnome-keyring gstreamer jack lirc live lua matroska mp3 mpeg mtp ogg skins theora twolame vorbis x264 x265" emerge --ask media-video/vlc
 
 jgmenu (https://github.com/johanmalm/jgmenu.git)
 

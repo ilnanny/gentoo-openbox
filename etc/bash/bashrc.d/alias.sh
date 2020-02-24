@@ -8,7 +8,7 @@
 #================================================
 #================================================
 
-# ___      Alias Principali
+# ___      Alias
 
 
 alias 300dpi="for i in *; do inkscape $i -d=300 -C --export-png=`echo $i | sed -e s/svg$/png/`; done"
@@ -64,36 +64,7 @@ alias utenti="cut -d: -f1 /etc/passwd"
 alias vbm="sudo mount -t vboxsf -o rw,uid=1000,gid=1000 Public /home/$USER/Pubblici"
 alias youtube-mp3='youtube-dl --extract-audio --audio-format mp3  --audio-quality 0'
 alias youtube-video="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'"
-
-
-# ___      Alias Directorys
-
-
-alias ath='su -c "zcat /proc/config.gz | grep CONFIG_ATH"'
-alias backup='sh /home/ilnanny/bin/backup'
-alias blb='sh /home/ilnanny/bin/bleachbit1'
-alias cleaner='sh /home/ilnanny/bin/cleaner'
-alias clone='cd ~/Git && git clone'
-alias fstab='sudo geany /etc/fstab'
-alias gitup='sh /home/ilnanny/bin/gitup'
-alias goapp='sudo thunar /usr/share/applications/'
-alias gobash='sudo thunar /etc/bash'
-alias goicon='sudo thunar /usr/share/icons/'
-alias goos='sudo thunar /media/Dati/OS/Linux/'
-alias goportage='sudo thunar /etc/portage/'
-alias gotheme='sudo thunar /usr/share/themes/'
-alias goscript='sudo thunar /home/ilnanny/bin/'
-alias gowall='sudo thunar /usr/share/backgrounds/'
-alias godotfiles='thunar /media/Dati/Git/Dotfiles/'
-alias gogit='thunar /media/Dati/Git/'
-alias gowiki='thunar /media/Dati/Git/Dotfiles/Wiki/'
-alias mioscript='geany /media/Dati/Git/Dotfile/Scripts/zz-ilnanny'
-alias memousb='sh /home/ilnanny/bin/usblist'
 alias myip=' sudo wget -qO- http://ipecho.net/plain'
-alias showalias='cat /etc/bash/bashrc.d/alias.sh'
-alias usblist='su -c "sh /home/ilnanny/bin/usblist"'
-alias wiki='cd /media/Dati/Git/Dotfiles/01-Files/Wiki/Gentoo-wiki && whereis'
 
 
-# ___     Fine
 

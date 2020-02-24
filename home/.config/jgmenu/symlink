@@ -1,4 +1,4 @@
-rm jgmenurc
+
 ln -s jgmenurc-dark jgmenurc
 ln -s jgmenurc-darkblue jgmenurc
 ln -s jgmenurc-greyblu jgmenurc
