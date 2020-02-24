@@ -39,11 +39,11 @@ ________________________________________________________________________________
 Screenshot 1
 <img src="https://raw.githubusercontent.com/ilnanny/gentoo-openbox/master/screen.png?raw=true"screen">
 <hr align=”left” size=”1″ width=”300″ color=”red” noshade>
-Screenshot 2
-<img src="https://raw.githubusercontent.com/ilnanny/Dotfiles/master/screen1.png?raw=true"screen">
+Screenshot 02
+<img src="https://raw.githubusercontent.com/ilnanny/Dotfiles/master/scrot2.png?raw=true"screen2">
 <hr align=”left” size=”1″ width=”300″ color=”red” noshade>
-Screenshot 3
-<img src="https://raw.githubusercontent.com/ilnanny/Dotfiles/master/screen-2.png?raw=true"screen">
+Screenshot 03
+<img src="https://raw.githubusercontent.com/ilnanny/Dotfiles/master/scrot3.png?raw=true"screen3">
 <hr align=”left” size=”1″ width=”300″ color=”red” noshade>
 ___________________________________________________________________________________________________________________________
 
