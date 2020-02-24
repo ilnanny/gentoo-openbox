@@ -37,7 +37,7 @@ ________________________________________________________________________________
 
 <hr align=”left” size=”1″ width=”300″ color=”red” noshade>
 Screenshot 1
-<img src="https://raw.githubusercontent.com/ilnanny/Dotfiles/master/screen.png?raw=true"screen">
+<img src="https://raw.githubusercontent.com/ilnanny/gentoo-openbox/master/screen.png?raw=true"screen">
 <hr align=”left” size=”1″ width=”300″ color=”red” noshade>
 Screenshot 2
 <img src="https://raw.githubusercontent.com/ilnanny/Dotfiles/master/screen1.png?raw=true"screen">
